@@ -1,0 +1,66 @@
+.mybutton {
+	background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#88D2EA), to(#00A0D3));
+	border: 1px solid #999;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #FFF;
+	float: left;
+	font-family: Arial, sans-serif;
+	font-size: 1.2em;
+	height: 60px;
+	position: relative;
+	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.35), 0px 1px 1px rgba(255, 255, 255, 0.15);
+	z-index: 400;
+	/* **** USE THESE FOR 4 BUTTON LAYOUT ****
+	margin: 0 1.76% 0 0; 
+	padding: 0 1.5%;
+	width: 23.68%;*/
+	
+	/* **** USE THESE FOR 5 BUTTON LAYOUT **** */
+	margin: 0 1.1% 0 0;
+	padding: 0.8% 1.5% 0 1.5%;
+	width: 19%;
+}
+
+.mybutton:hover {
+/*	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,150,221,1)), color-stop(100%,rgba(40,129,188,1)));*/
+	background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#91E0FA), to(#00AAE0));
+	color: white !important;
+	cursor: pointer;	
+}
+
+.mybutton.active {
+	background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#AD92C9), to(#4D148C));
+	border: #777;
+}
+
+.mybutton.active:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#B89CD6), to(#5A17A3));	
+}
+
+.mybutton .gray {
+	background: -webkit-gradient(linear, 0% 0%, 0% 74%, from(#CCCCCC), to(#888888));
+}
+
+.mybutton span {
+	font-size: 75%;	
+}
+
+.mybutton:last-child {
+	margin: 0;
+}
+
+.mybutton img {
+	margin-top: -3px;
+}
+
+.btn_group {
+	background-color: #aaa;
+	position: relative;
+	z-index: 300;
+	left: -3px;
+	top: -3px;
+	border-radius: 5px;
+	height: 67px;
+	width: 59.7%;
+}

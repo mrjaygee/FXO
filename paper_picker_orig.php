@@ -8,12 +8,7 @@
 	<title>FXO 4.0 Paper Test (orig)</title>
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/base.css" />
-	<link rel="stylesheet" href="css/styles.css" />
-	<link rel="stylesheet" href="css/flyout.css" />
-	<link rel="stylesheet" href="css/swatches.css" /> 
-	<link rel="stylesheet" href="css/buttons.css" />
-<!--	<link rel="stylesheet" href="css/preview_1.css" />-->
-	<link rel="stylesheet" href="css/preview_2.css" />
+	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
 	<div id="topbar">

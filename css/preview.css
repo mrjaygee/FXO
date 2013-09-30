@@ -1,0 +1,132 @@
+/* line 1, ../sass/preview.scss */
+#preview {
+  position: relative;
+  top: 130px;
+  z-index: 100;
+}
+
+/* line 7, ../sass/preview.scss */
+#print_preview {
+  background-color: #FFF;
+  border: 1px solid #BBB;
+  box-sizing: border-box;
+  float: left;
+  width: 738px;
+  padding: 25px 0 37px 0;
+  position: relative;
+  margin-right: 18px;
+  text-align: center;
+}
+
+/* line 19, ../sass/preview.scss */
+.img_preview {
+  border: 1px solid #333;
+  box-shadow: 0px 3px 5px #444;
+  /*width: 468px;*/
+  width: 515px;
+}
+
+/* line 26, ../sass/preview.scss */
+.preview-control-container {
+  color: black;
+  font-size: 13px;
+  /*margin-top: 20px;*/
+  height: 25px;
+  position: absolute;
+  bottom: 4px;
+  left: 35px;
+  width: 90%;
+}
+
+/* line 37, ../sass/preview.scss */
+#page_number {
+  color: #666;
+  /*	position: absolute;
+  		top: -53px;
+  		left: -24px;
+  */
+}
+
+/* line 44, ../sass/preview.scss */
+#page_number input {
+  border-radius: 3px;
+  width: 15px;
+}
+
+/* line 49, ../sass/preview.scss */
+#arrow_l, #arrow_r {
+  position: absolute;
+  /*bottom: 11px;*/
+  bottom: 210px;
+}
+
+/* line 55, ../sass/preview.scss */
+#arrow_l:hover, #arrow_r:hover, #arrow_t:hover, #arrow_b:hover {
+  cursor: pointer;
+}
+
+/* line 59, ../sass/preview.scss */
+#arrow_l:after, #arrow_l:before {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 69, ../sass/preview.scss */
+#arrow_l {
+  background: #FFF;
+  left: 0px;
+}
+
+/* line 74, ../sass/preview.scss */
+#arrow_l:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #ffffff;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+/* line 80, ../sass/preview.scss */
+#arrow_l:before {
+  border-color: rgba(209, 209, 209, 0);
+  border-right-color: #d1d1d1;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+/* line 87, ../sass/preview.scss */
+#arrow_r {
+  background: #FFF;
+  right: 0px;
+}
+
+/* line 91, ../sass/preview.scss */
+#arrow_r:after, #arrow_r:before {
+  left: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 101, ../sass/preview.scss */
+#arrow_r:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #ffffff;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+/* line 107, ../sass/preview.scss */
+#arrow_r:before {
+  border-color: rgba(209, 209, 209, 0);
+  border-left-color: #d1d1d1;
+  border-width: 15px;
+  margin-top: -15px;
+}

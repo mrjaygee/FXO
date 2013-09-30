@@ -1,0 +1,327 @@
+body {
+	background-color: #F5F5F5;
+}
+
+.row {
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	width: 990px;
+}
+
+/* **********************************************
+   TOP BAR 
+   ********************************************** */
+   
+#topbar {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F1F1F3), to(#d7d9d9));
+	height: 45px;
+	position: fixed;
+		top: 0;
+	width: 100%;
+	z-index: 500;
+}
+
+/* **********************************************
+   FILE PREVIEW 
+   ********************************************** */
+   
+#preview {
+/*	border-bottom: 1px solid #333;*/
+	min-height: 500px;
+	position: relative;
+		top: 65px;		
+	width: 100%;
+	z-index: 100;
+}
+
+#print_preview {
+	box-sizing: border-box;
+/*	background-color: yellow;*/
+	float: left;
+	padding-left: 53px;
+	width: 738px;
+	margin-right: 18px;
+	text-align: center;
+}
+
+
+.preview-control-container {
+    color: black;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.preview-control-container button {
+    margin: 0px 10px 0px 10px;
+	display: inline-block;
+	padding: 4px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #cccccc;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* **********************************************
+   SIDEBAR ELEMENTS 
+   ********************************************** */
+#sidebar {
+	box-sizing: border-box;
+	float: left;
+	width: 234px;
+}
+
+#sidebar ul {
+	background-color: #F5F5F5;
+	border: 1px solid #CCC;
+	color: #999;	
+	list-style-position: inside;
+	margin-bottom: 20px;	
+	padding: 0;
+}
+
+#sidebar li {
+	border-bottom: 1px solid #CCC;
+	list-style-image: url('../img/step_open.png');	
+	padding: 5px 10px 7px 10px;
+}
+
+#sidebar li:last-child, #sidebar li.group {
+	border-bottom: none;
+}
+
+#sidebar li.complete {
+	list-style-image: url('../img/step_complete.png');	
+	color: #666;	
+}
+
+#sidebar li.current {
+	list-style-image: url('../img/step_current.png');	
+	color: #333;	
+}
+
+#sidebar .group {
+	background-color: #FFF;
+	border-bottom: 1px solid #CCC;
+	box-shadow: inset 0 4px 2px -2px rgba(0, 0, 0, 0.2);	
+}
+
+#sidebar .group li {
+	border-bottom: 1px solid #E2E2E2;
+}
+
+#sidebar .group li:last-child {
+	border-bottom: none;
+}
+
+.edit_link {
+	font-size: 75%;
+	text-decoration: underline;
+}
+
+#estimate {
+	background-color: #F5F5F5;
+	border: 1px solid #CCC;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: right;
+}
+
+#estimate h3 {
+	line-height: 1.2em;
+}
+
+#estimate form {
+	padding-top: 15px;
+	border-top: 1px solid #ccc;
+	margin-top: 15px;	
+}
+
+input[type="number"] {
+	padding: 5px;
+	width: 60px;
+}
+
+
+/* **********************************************
+   PAGE NAV ARROWS & SUCH
+   ********************************************** */
+.arrow_l:hover, .arrow_r:hover, .arrow_t:hover, .arrow_b:hover {
+	cursor: pointer;
+}
+
+.arrow_l {
+	background: #FFF;
+	position: relative;
+		bottom: -30px;
+		left: 525px;
+}
+
+.arrow_l:after, .arrow_l:before {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_l:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #ffffff;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.arrow_l:before {
+	border-color: rgba(209, 209, 209, 0);
+	border-right-color: #d1d1d1;
+	border-width: 15px;
+	margin-top: -15px;
+}
+
+.arrow_r {
+	background: #FFF;
+	position: relative;
+		bottom: -30px;
+		right: 45px;
+}
+.arrow_r:after, .arrow_r:before {
+	left: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_r:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #ffffff;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.arrow_r:before {
+	border-color: rgba(209, 209, 209, 0);
+	border-left-color: #d1d1d1;
+	border-width: 15px;
+	margin-top: -15px;
+}
+
+.arrow_t {
+	background: #ffffff;
+	position: relative;
+		top: 20px;
+		left: -27px;
+}
+.arrow_t:after, .arrow_t:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_t:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.arrow_t:before {
+	border-color: rgba(209, 209, 209, 0);
+	border-bottom-color: #d1d1d1;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+.arrow_b {
+	background: #ffffff;
+	position: relative;
+		top: 150px;
+		left: -27px;
+}
+.arrow_b:after, .arrow_b:before {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_b:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #ffffff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.arrow_b:before {
+	border-color: rgba(209, 209, 209, 0);
+	border-top-color: #d1d1d1;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+/* **********************************************
+   BOTTOM BAR
+   ********************************************** */
+#question {
+	box-sizing: border-box;
+/*	background-color: #CCC;*/
+	background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#888888), to(#CCCCCC));
+	height: 200px;
+	position: fixed;
+		bottom: 0px;
+	padding: 20px 0;
+	width: 100%;
+	z-index: 500;
+}
+
+#question h3 {
+	color: #FFF;
+	font-size: 1.5em;
+	margin: 0 0 20px 0;
+	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.35), 0px 1px 1px rgba(255, 255, 255, 0.15);
+}
+
+#options p {
+	color: #EEE;
+	padding: 10px 0;
+}
+
+
+/* **********************************************
+   PAPER PICKUP FLYOUT
+   ********************************************** */
+
+#flyout {
+	bottom: 95px;
+	left: 56px;
+}
+
+/* **********************************************
+   SELECTION BUTTONS
+   ********************************************** */

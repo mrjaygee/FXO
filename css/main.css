@@ -1,0 +1,615 @@
+@charset "UTF-8";
+/* In this file you should write your main styles. (or centralize your imports) */
+/* line 3, ../sass/main.scss */
+body {
+  background-color: #E5E5E5;
+}
+
+/* line 7, ../sass/main.scss */
+.row {
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  width: 990px;
+}
+
+/* **********************************************
+   TOP BAR 
+   ********************************************** */
+/* line 18, ../sass/main.scss */
+#topbar {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f1f3), to(#d7d9d9));
+  height: 45px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+/* **********************************************
+   QUESTION BAR 
+   ********************************************** */
+/* line 32, ../sass/main.scss */
+#question {
+  box-sizing: border-box;
+  /*	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1C71A4), to(#299BDD));*/
+  background-color: #00A0D3;
+  height: 65px;
+  position: fixed;
+  top: 45px;
+  padding: 16px 0;
+  width: 100%;
+  z-index: 500;
+}
+
+/* line 44, ../sass/main.scss */
+#question h3 {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.35), 0px 1px 1px rgba(255, 255, 255, 0.15);
+}
+
+/* **********************************************
+   FILE PREVIEW 
+   ********************************************** */
+/* **********************************************
+   SIDEBAR ELEMENTS 
+   ********************************************** */
+/* line 61, ../sass/main.scss */
+#sidebar {
+  box-sizing: border-box;
+  float: left;
+  width: 234px;
+}
+
+/* line 67, ../sass/main.scss */
+#sidebar ul {
+  background-color: #F5F5F5;
+  border: 1px solid #CCC;
+  color: #999;
+  list-style-position: inside;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+/* line 76, ../sass/main.scss */
+#sidebar li {
+  border-bottom: 1px solid #CCC;
+  list-style-image: url("../img/step_open.png");
+  padding: 5px 10px 7px 10px;
+}
+
+/* line 82, ../sass/main.scss */
+#sidebar li:last-child {
+  border-bottom: none;
+}
+
+/* line 86, ../sass/main.scss */
+#sidebar li.complete {
+  list-style-image: url("../img/step_complete.png");
+  color: #666;
+}
+
+/* line 91, ../sass/main.scss */
+#sidebar li.current {
+  list-style-image: url("../img/step_current.png");
+  color: #333;
+}
+
+/* line 96, ../sass/main.scss */
+#sidebar .group {
+  background-color: #FFF;
+  border-bottom: 1px solid #CCC;
+  box-shadow: inset 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 102, ../sass/main.scss */
+#sidebar .group li {
+  border-bottom: 1px solid #E2E2E2;
+}
+
+/* line 106, ../sass/main.scss */
+#sidebar .group li:last-child {
+  border-bottom: none;
+}
+
+/* line 110, ../sass/main.scss */
+.edit_link {
+  font-size: 75%;
+  text-decoration: underline;
+}
+
+/* line 115, ../sass/main.scss */
+#estimate {
+  background-color: #F5F5F5;
+  border: 1px solid #CCC;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: right;
+}
+
+/* line 123, ../sass/main.scss */
+#estimate h3 {
+  line-height: 1.2em;
+}
+
+/* line 127, ../sass/main.scss */
+#estimate form {
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+}
+
+/* line 133, ../sass/main.scss */
+input[type="number"] {
+  padding: 5px;
+  width: 60px;
+}
+
+/* **********************************************
+   SELECTION BUTTONS
+   ********************************************** */
+/* line 144, ../sass/main.scss */
+#options {
+  position: relative;
+  top: 140px;
+}
+
+/* line 149, ../sass/main.scss */
+#options p {
+  color: #4D148C;
+  padding: 10px 0;
+}
+
+/* **********************************************
+   PAPER PICKUP FLYOUT
+   ********************************************** */
+/* line 158, ../sass/main.scss */
+#flyout {
+  bottom: 165px;
+  left: 53px;
+}
+
+/* **********************************************
+   ••••••••••••••••••••••••••••••••••••••••••••••
+   
+   IMPORTS & MIXINS & SUCH
+   
+   ••••••••••••••••••••••••••••••••••••••••••••••
+   ********************************************** */
+/* line 1, ../sass/buttons.scss */
+.mybutton {
+  background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#88d2ea), to(#00a0d3));
+  border: 1px solid #999;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  height: 60px;
+  position: relative;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.35), 0px 1px 1px rgba(255, 255, 255, 0.15);
+  z-index: 400;
+  /* **** USE THESE FOR 4 BUTTON LAYOUT ****
+  margin: 0 1.76% 0 0; 
+  padding: 0 1.5%;
+  width: 23.68%;*/
+  /* **** USE THESE FOR 5 BUTTON LAYOUT **** */
+  margin: 0 1.1% 0 0;
+  padding: 0.8% 1.5% 0 1.5%;
+  width: 19%;
+}
+
+/* line 25, ../sass/buttons.scss */
+.mybutton:hover {
+  /*	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,150,221,1)), color-stop(100%,rgba(40,129,188,1)));*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#91e0fa), to(#00aae0));
+  color: white !important;
+  cursor: pointer;
+}
+
+/* line 32, ../sass/buttons.scss */
+.mybutton.active {
+  background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#ad92c9), to(#4d148c));
+  border: #777;
+}
+
+/* line 37, ../sass/buttons.scss */
+.mybutton.active:hover {
+  background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#b89cd6), to(#5a17a3));
+}
+
+/* line 41, ../sass/buttons.scss */
+.mybutton .gray {
+  background: -webkit-gradient(linear, 0% 0%, 0% 74%, from(#cccccc), to(#888888));
+}
+
+/* line 45, ../sass/buttons.scss */
+.mybutton span {
+  font-size: 75%;
+}
+
+/* line 49, ../sass/buttons.scss */
+.mybutton:last-child {
+  margin: 0;
+}
+
+/* line 53, ../sass/buttons.scss */
+.mybutton img {
+  margin-top: -3px;
+}
+
+/* line 57, ../sass/buttons.scss */
+.btn_group {
+  background-color: #aaa;
+  position: relative;
+  z-index: 300;
+  left: -3px;
+  top: -3px;
+  border-radius: 5px;
+  height: 67px;
+  width: 59.7%;
+}
+
+/* **********************************************
+   PAPER PICKUP FLYOUT
+   ********************************************** */
+/* line 5, ../sass/flyout.scss */
+#flyout {
+  background-color: #AAA;
+  background-clip: padding-box;
+  /*border: 1px solid #02B3F0;*/
+  border: 1px solid #999;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  display: none;
+  min-height: 300px;
+  padding: 1px;
+  position: absolute;
+  text-align: left;
+  white-space: normal;
+  width: 925px;
+  z-index: 1010;
+}
+
+/* line 28, ../sass/flyout.scss */
+#flyout:after, #flyout:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  margin-top: -1px;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 39, ../sass/flyout.scss */
+#flyout:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #FFF;
+  border-width: 20px;
+  left: 70%;
+  margin-left: -20px;
+}
+
+/* line 47, ../sass/flyout.scss */
+#flyout:before {
+  border-color: rgba(194, 225, 245, 0);
+  /*border-top-color: #02B3F0;*/
+  border-top-color: #999;
+  border-width: 21px;
+  left: 70%;
+  margin-left: -21px;
+}
+
+/* line 56, ../sass/flyout.scss */
+#flyout h4 {
+  background-color: #CCC;
+  /*	background: -webkit-gradient(linear, 0% 20%, 0% 100%, from(#FFFFFF), to(#B2B2B2));*/
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 3px 10px;
+}
+
+/* line 64, ../sass/flyout.scss */
+#paper_types {
+  box-shadow: inset -4px 0px 2px -2px rgba(0, 0, 0, 0.25);
+  float: left;
+  min-height: 330px;
+  width: 250px;
+}
+
+/* line 71, ../sass/flyout.scss */
+#paper_types li {
+  border-bottom: 1px solid #888;
+  color: #444;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* line 79, ../sass/flyout.scss */
+#paper_types li:last-child {
+  border-bottom: none;
+}
+
+/* line 83, ../sass/flyout.scss */
+#paper_types li.active {
+  background-color: #FFF;
+  color: #00A0D3;
+}
+
+/* line 89, ../sass/flyout.scss */
+#paper_types li p {
+  color: #444;
+  font-weight: normal;
+}
+
+/* line 94, ../sass/flyout.scss */
+#paper_types li.active p {
+  color: #444;
+}
+
+/* line 98, ../sass/flyout.scss */
+#tiles {
+  background-color: #FFF;
+  box-sizing: border-box;
+  -webkit-column-count: 3;
+  /* Safari and Chrome */
+  column-count: 3;
+  -webkit-column-gap: 18px;
+  /* Safari and Chrome */
+  column-gap: 18px;
+  column-fill: auto;
+  -webkit-column-fill: auto;
+  float: left;
+  padding: 18px;
+  width: 675px;
+}
+
+/* line 112, ../sass/flyout.scss */
+.tile {
+  border-radius: 3px;
+  box-sizing: border-box;
+  break-inside: avoid-column;
+  -webkit-column-break-inside: avoid;
+  height: 36px;
+  line-height: 2em;
+  margin: 0 0 6px 0;
+  padding: 2px;
+}
+
+/* line 123, ../sass/flyout.scss */
+.tile:hover {
+  background: #00a0d3 url("../img/check-button-icon1.png") 95% 50% no-repeat;
+  background-size: 10% 50%;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* line 130, ../sass/flyout.scss */
+.selected-option {
+  background: url("../img/check-button-icon1.png") 95% 50% no-repeat;
+  background-size: 10% 50%;
+}
+
+/* line 1, ../sass/preview.scss */
+#preview {
+  position: relative;
+  top: 130px;
+  z-index: 100;
+}
+
+/* line 7, ../sass/preview.scss */
+#print_preview {
+  background-color: #FFF;
+  border: 1px solid #BBB;
+  box-sizing: border-box;
+  float: left;
+  width: 738px;
+  padding: 25px 0 37px 0;
+  position: relative;
+  margin-right: 18px;
+  text-align: center;
+}
+
+/* line 19, ../sass/preview.scss */
+.img_preview {
+  border: 1px solid #333;
+  box-shadow: 0px 3px 5px #444;
+  /*width: 468px;*/
+  width: 515px;
+}
+
+/* line 26, ../sass/preview.scss */
+.preview-control-container {
+  color: black;
+  font-size: 13px;
+  /*margin-top: 20px;*/
+  height: 25px;
+  position: absolute;
+  bottom: 4px;
+  left: 35px;
+  width: 90%;
+}
+
+/* line 37, ../sass/preview.scss */
+#page_number {
+  color: #666;
+  /*	position: absolute;
+  		top: -53px;
+  		left: -24px;
+  */
+}
+
+/* line 44, ../sass/preview.scss */
+#page_number input {
+  border-radius: 3px;
+  width: 15px;
+}
+
+/* line 49, ../sass/preview.scss */
+#arrow_l, #arrow_r {
+  position: absolute;
+  /*bottom: 11px;*/
+  bottom: 210px;
+}
+
+/* line 55, ../sass/preview.scss */
+#arrow_l:hover, #arrow_r:hover, #arrow_t:hover, #arrow_b:hover {
+  cursor: pointer;
+}
+
+/* line 59, ../sass/preview.scss */
+#arrow_l:after, #arrow_l:before {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 69, ../sass/preview.scss */
+#arrow_l {
+  background: #FFF;
+  left: 0px;
+}
+
+/* line 74, ../sass/preview.scss */
+#arrow_l:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #ffffff;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+/* line 80, ../sass/preview.scss */
+#arrow_l:before {
+  border-color: rgba(209, 209, 209, 0);
+  border-right-color: #d1d1d1;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+/* line 87, ../sass/preview.scss */
+#arrow_r {
+  background: #FFF;
+  right: 0px;
+}
+
+/* line 91, ../sass/preview.scss */
+#arrow_r:after, #arrow_r:before {
+  left: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 101, ../sass/preview.scss */
+#arrow_r:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #ffffff;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+/* line 107, ../sass/preview.scss */
+#arrow_r:before {
+  border-color: rgba(209, 209, 209, 0);
+  border-left-color: #d1d1d1;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+/* SWATCHES */
+/* line 2, ../sass/swatches.scss */
+.swatch {
+  border: 1px solid #AAA;
+  height: 30px;
+  float: left;
+  margin-right: 8px;
+  width: 30px;
+}
+
+/* line 10, ../sass/swatches.scss */
+.white {
+  background-color: #FFF;
+}
+
+/* line 13, ../sass/swatches.scss */
+.ivory {
+  background-color: #feefca;
+}
+
+/* line 17, ../sass/swatches.scss */
+.canary {
+  background-color: #fff07b;
+}
+
+/* line 21, ../sass/swatches.scss */
+.salmon {
+  background-color: #f87d5e;
+}
+
+/* line 25, ../sass/swatches.scss */
+.orchid {
+  background-color: #bcbcf3;
+}
+
+/* line 29, ../sass/swatches.scss */
+.pastel_blue {
+  background-color: #95bfe1;
+}
+
+/* line 33, ../sass/swatches.scss */
+.green {
+  background-color: #9fcfad;
+}
+
+/* line 37, ../sass/swatches.scss */
+.ultra_lemon {
+  background-color: #f4fd0e;
+}
+
+/* line 41, ../sass/swatches.scss */
+.sun_yellow {
+  background-color: #fbd00e;
+}
+
+/* line 45, ../sass/swatches.scss */
+.ultra-orange {
+  background-color: #FF4000;
+}
+
+/* line 49, ../sass/swatches.scss */
+.red {
+  background-color: #B20000;
+}
+
+/* line 53, ../sass/swatches.scss */
+.ultra_fuschia {
+  background-color: #D900D9;
+}
+
+/* line 57, ../sass/swatches.scss */
+.bright_blue {
+  background-color: #26C9FF;
+}
+
+/* line 61, ../sass/swatches.scss */
+.ultra_lime {
+  background-color: #D2FF4D;
+}

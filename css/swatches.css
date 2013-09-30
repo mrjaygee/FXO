@@ -1,63 +1,79 @@
 /* SWATCHES */
+/* line 2, ../sass/swatches.scss */
 .swatch {
-	border: 1px solid #AAA;
-	height: 30px;
-	float: left;
-	margin-right: 8px;
-	width: 30px;	
+  border: 1px solid #AAA;
+  height: 30px;
+  float: left;
+  margin-right: 8px;
+  width: 30px;
 }
 
+/* line 10, ../sass/swatches.scss */
 .white {
-	background-color: #FFF;
+  background-color: #FFF;
 }
+
+/* line 13, ../sass/swatches.scss */
 .ivory {
-	background-color: #feefca;
+  background-color: #feefca;
 }
 
+/* line 17, ../sass/swatches.scss */
 .canary {
-	background-color: #fff07b;
+  background-color: #fff07b;
 }
 
+/* line 21, ../sass/swatches.scss */
 .salmon {
-	background-color: #f87d5e;
+  background-color: #f87d5e;
 }
 
+/* line 25, ../sass/swatches.scss */
 .orchid {
-	background-color: #bcbcf3;
+  background-color: #bcbcf3;
 }
 
+/* line 29, ../sass/swatches.scss */
 .pastel_blue {
-	background-color: #95bfe1;
+  background-color: #95bfe1;
 }
 
+/* line 33, ../sass/swatches.scss */
 .green {
-	background-color: #9fcfad;
+  background-color: #9fcfad;
 }
 
+/* line 37, ../sass/swatches.scss */
 .ultra_lemon {
-	background-color: #f4fd0e;
+  background-color: #f4fd0e;
 }
 
+/* line 41, ../sass/swatches.scss */
 .sun_yellow {
-	background-color: #fbd00e;
+  background-color: #fbd00e;
 }
 
+/* line 45, ../sass/swatches.scss */
 .ultra-orange {
-	background-color: #FF4000;
+  background-color: #FF4000;
 }
 
+/* line 49, ../sass/swatches.scss */
 .red {
-	background-color: #B20000;
+  background-color: #B20000;
 }
 
+/* line 53, ../sass/swatches.scss */
 .ultra_fuschia {
-	background-color: #D900D9;
+  background-color: #D900D9;
 }
 
+/* line 57, ../sass/swatches.scss */
 .bright_blue {
-	background-color: #26C9FF;
+  background-color: #26C9FF;
 }
 
+/* line 61, ../sass/swatches.scss */
 .ultra_lime {
-	background-color: #D2FF4D;
+  background-color: #D2FF4D;
 }
