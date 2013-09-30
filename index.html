@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>FXO Scroll Test</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<div id="topbar">
+		<div class="row">
+			<img src="img/menu.png" alt="menu" />
+		</div>
+	</div>
+	<div id="question">
+		<div class="row"><h3>What type of paper would you like to use?</h3></div>
+	</div>
+	<div id="preview">
+		<div class="row">
+			<div id="print_preview"><img src="img/print-preview.png"></div>
+		</div>
+	</div>
+	<div id="scrollzone">
+		<div class="row">
+			<div class="row_label">White Paper</div>
+			<div class="tile">Laser <small>(24lb)</small> <img src="img/fsc-icon.png" alt=""></div>
+			<div class="tile">Laser <small>(32lb)</small> <img src="img/fsc-icon.png" alt=""></div>
+			<div class="tile">Laser <small>(60lb)</small> <img src="img/fsc-icon.png" alt=""></div>
+			<div class="tile">Laser Recycled <small>(24lb)</small> <img src="img/fsc-icon.png" alt=""></div>			
+			<div class="tile">30% Recycled <img src="img/fsc-icon.png" alt="" /></div>
+			<div class="tile">100% Recycled <img src="img/fsc-icon.png" alt="" />&nbsp;<img src="img/recycle-icon.png" alt="" /></div>
+			<div class="tile">Gloss Text <img src="img/recycle-icon.png" alt="" /></div>
+			<div class="tile">Standard White <img src="img/recycle-icon.png" alt="" /></div>	
+			<div class="clearfix"></div>
+		</div>
+		<div class="row">
+			<div class="row_label">Color Paper</div>
+			<div id="ivory"class="tile">Ivory <img src="img/recycle-icon.png" alt="" /></div>
+			<div id="canary"class="tile">Canary <img src="img/recycle-icon.png" alt="" /></div>
+			<div id="salmon" class="tile">Salmon <img src="img/recycle-icon.png" alt="" /></div>
+			<div id="orchid" class="tile">Orchid <img src="img/recycle-icon.png" alt="" /></div>			
+			<div id="pastel_blue" class="tile">Pastel Blue <img src="img/recycle-icon.png" alt="" /></div>
+			<div id="green" class="tile">Green <img src="img/recycle-icon.png" alt="" /></div>
+			<div id="ultra_lemon" class="tile">Ultra Lemon</div>
+			<div id="sun_yellow" class="tile">Sun Yellow</div>	
+			<div class="clearfix"></div>
+			<div class="more_less_button">Show More <img src="img/more-less-icon.png" alt="" /></div>
+			<div class="more_less_container">
+				<div id="ivory"class="tile">Ivory <img src="img/recycle-icon.png" alt="" /></div>
+				<div id="canary"class="tile">Canary <img src="img/recycle-icon.png" alt="" /></div>
+				<div id="salmon" class="tile">Salmon <img src="img/recycle-icon.png" alt="" /></div>
+				<div id="orchid" class="tile">Orchid <img src="img/recycle-icon.png" alt="" /></div>			
+				<div id="pastel_blue" class="tile">Pastel Blue <img src="img/recycle-icon.png" alt="" /></div>
+				<div id="green" class="tile">Green <img src="img/recycle-icon.png" alt="" /></div>
+				<div id="ultra_lemon" class="tile">Ultra Lemon</div>
+				<div id="sun_yellow" class="tile">Sun Yellow</div>	
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row_label">Card Stock</div>
+			<div id="ivory"class="tile">Ivory <img src="img/recycle-icon.png" alt="" /></div>
+			<div id="canary"class="tile">Canary <img src="img/recycle-icon.png" alt="" /></div>
+			<div id="salmon" class="tile">Salmon <img src="img/recycle-icon.png" alt="" /></div>
+			<div id="orchid" class="tile">Orchid <img src="img/recycle-icon.png" alt="" /></div>			
+			<div id="pastel_blue" class="tile">Pastel Blue <img src="img/recycle-icon.png" alt="" /></div>
+			<div id="green" class="tile">Green <img src="img/recycle-icon.png" alt="" /></div>
+			<div id="ultra_lemon" class="tile">Ultra Lemon</div>
+			<div id="sun_yellow" class="tile">Sun Yellow</div>	
+			<div class="clearfix"></div>
+			<div class="more_less_button">Show More <img src="img/more-less-icon.png" alt="" /></div>
+			<div class="more_less_container">
+				<div id="ivory"class="tile">Ivory <img src="img/recycle-icon.png" alt="" /></div>
+				<div id="canary"class="tile">Canary <img src="img/recycle-icon.png" alt="" /></div>
+				<div id="salmon" class="tile">Salmon <img src="img/recycle-icon.png" alt="" /></div>
+				<div id="orchid" class="tile">Orchid <img src="img/recycle-icon.png" alt="" /></div>			
+				<div id="pastel_blue" class="tile">Pastel Blue <img src="img/recycle-icon.png" alt="" /></div>
+				<div id="green" class="tile">Green <img src="img/recycle-icon.png" alt="" /></div>
+				<div id="ultra_lemon" class="tile">Ultra Lemon</div>
+				<div id="sun_yellow" class="tile">Sun Yellow</div>	
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+<!--	<div id="cover_fade">&nbsp;</div>-->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script>
+	 $( document ).ready(function() {
+	 	$(".more_less_button").click(function() {
+	 	  $(this).next(".more_less_container").toggle('fast');
+	 	});
+	 });
+  </script>
+</body>
+</html>
