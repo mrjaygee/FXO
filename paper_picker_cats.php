@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<title>FXO 4.0 Paper Test (Popular)</title>
+	<title>FXO 4.0 Paper Test (Categories)</title>
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/base.css" />
 	<link rel="stylesheet" href="css/main.css" />
@@ -45,15 +45,15 @@
 		</div>
 		<div class="clearfix"></div>
 	</div>
-	<?php include('includes/buttons_popular.php'); ?>
+	<?php include('includes/buttons_categories.php'); ?>
+	<?php include('includes/flyout_general.php'); ?>
   	<script src="js/jquery-1.10.2.min.js"></script>
   	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
 	<script>
 		 $( document ).ready(function() {
-		 	$("#more-options").click(function() {
-		 	  $('#flyout_tabbed').fadeToggle('fast');
+		 	$("#general_use").click(function() {
+		 	  $('#flyout_general').fadeToggle('fast');
 		 	});
-		 $( "#page_indicator" ).draggable( "option", "axis", "y" );	
 		 });
 	</script>
 </body>

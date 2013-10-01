@@ -155,11 +155,15 @@ input[type="number"] {
    PAPER PICKUP FLYOUT
    ********************************************** */
 
-#flyout {
-	bottom: 165px;
-	left: 53px;
+#flyout_tabbed {
+	bottom: 75px;
+	left: 155px;
 }
 
+#flyout_general {
+	top: 180px;
+	left: 0;
+}
 
 /* **********************************************
    ••••••••••••••••••••••••••••••••••••••••••••••
@@ -169,7 +173,7 @@ input[type="number"] {
    ••••••••••••••••••••••••••••••••••••••••••••••
    ********************************************** */
 
-@import "buttons.scss";
-@import "flyout.scss";
-@import "preview.scss";
-@import "swatches.scss";
+@import "_buttons.scss";
+@import "_flyout.scss";
+@import "_preview.scss";
+@import "_swatches.scss";
