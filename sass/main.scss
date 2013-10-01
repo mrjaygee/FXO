@@ -13,7 +13,7 @@ body {
 
 /* **********************************************
    TOP BAR 
-   ********************************************** */
+   **************************************//******** */
 
 #topbar {
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F1F1F3), to(#d7d9d9));
@@ -165,16 +165,19 @@ input[type="number"] {
 	left: 32px;
 }
 
-#flyout_general {
+/*#flyout_general {
 	bottom: 7px;
 	left: 32px;
-}
+}*/
 
 #flyout_general.flyouts:after { left: 10%; }
 #flyout_general.flyouts:before { left: 10%; }
 
 #flyout_resume.flyouts:after { left: 28%; }
 #flyout_resume.flyouts:before { left: 28%; }
+
+#flyout_cover.flyouts:after { left: 49%; }
+#flyout_cover.flyouts:before { left: 49%; }
 
 /* **********************************************
    ••••••••••••••••••••••••••••••••••••••••••••••

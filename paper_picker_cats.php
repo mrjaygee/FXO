@@ -56,6 +56,9 @@
 			$("#resume").click(function() {
 			  $('#flyout_resume').fadeToggle('fast');
 			});
+			$("#cover").click(function() {
+			  $('#flyout_cover').fadeToggle('fast');
+			});
 		 });
 	</script>
 </body>

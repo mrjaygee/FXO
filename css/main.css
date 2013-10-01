@@ -15,7 +15,8 @@ body {
 
 /* **********************************************
    TOP BAR 
-   ********************************************** */
+   **************************************/
+/******** */
 /* line 18, ../sass/main.scss */
 #topbar {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f1f3), to(#d7d9d9));
@@ -176,12 +177,10 @@ input[type="number"] {
   left: 32px;
 }
 
-/* line 168, ../sass/main.scss */
-#flyout_general {
-  bottom: 7px;
-  left: 32px;
-}
-
+/*#flyout_general {
+	bottom: 7px;
+	left: 32px;
+}*/
 /* line 173, ../sass/main.scss */
 #flyout_general.flyouts:after {
   left: 10%;
@@ -200,6 +199,16 @@ input[type="number"] {
 /* line 177, ../sass/main.scss */
 #flyout_resume.flyouts:before {
   left: 28%;
+}
+
+/* line 179, ../sass/main.scss */
+#flyout_cover.flyouts:after {
+  left: 49%;
+}
+
+/* line 180, ../sass/main.scss */
+#flyout_cover.flyouts:before {
+  left: 49%;
 }
 
 /* **********************************************
@@ -316,7 +325,7 @@ input[type="number"] {
   min-height: 300px;
   padding: 1px;
   position: absolute;
-  bottom: 7px;
+  bottom: 12px;
   left: 32px;
   text-align: left;
   white-space: normal;
@@ -661,4 +670,34 @@ input[type="number"] {
 /* line 61, ../sass/_swatches.scss */
 .ultra_lime {
   background-color: #D2FF4D;
+}
+
+/* line 65, ../sass/_swatches.scss */
+.natural {
+  background-color: #FBF8F2;
+}
+
+/* line 69, ../sass/_swatches.scss */
+.sand_stone {
+  background-color: #F3EBEA;
+}
+
+/* line 73, ../sass/_swatches.scss */
+.sea_spray {
+  background-color: #EDF3FD;
+}
+
+/* line 77, ../sass/_swatches.scss */
+.antique_gray {
+  background-color: #FBF4CD;
+}
+
+/* line 81, ../sass/_swatches.scss */
+.soft_pink {
+  background-color: #FFDEE6;
+}
+
+/* line 85, ../sass/_swatches.scss */
+.pastel_blue {
+  background-color: #FFEFCE;
 }
