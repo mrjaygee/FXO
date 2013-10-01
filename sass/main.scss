@@ -143,9 +143,14 @@ input[type="number"] {
    
 #options {
 	position: relative;
-		top: 140px;
+		top: 150px;
 }
- 
+
+#options .row {
+	position: relative;
+	z-index: 400;
+}
+
 #options p {
 	color: #4D148C;
 	padding: 10px 0;
@@ -157,13 +162,19 @@ input[type="number"] {
 
 #flyout_tabbed {
 	bottom: 75px;
-	left: 155px;
+	left: 32px;
 }
 
 #flyout_general {
-	top: 180px;
-	left: 0;
+	bottom: 7px;
+	left: 32px;
 }
+
+#flyout_general.flyouts:after { left: 10%; }
+#flyout_general.flyouts:before { left: 10%; }
+
+#flyout_resume.flyouts:after { left: 28%; }
+#flyout_resume.flyouts:before { left: 28%; }
 
 /* **********************************************
    ••••••••••••••••••••••••••••••••••••••••••••••

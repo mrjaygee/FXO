@@ -46,7 +46,6 @@
 		<div class="clearfix"></div>
 	</div>
 	<?php include('includes/buttons_categories.php'); ?>
-	<?php include('includes/flyout_general.php'); ?>
   	<script src="js/jquery-1.10.2.min.js"></script>
   	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
 	<script>
@@ -54,6 +53,9 @@
 		 	$("#general_use").click(function() {
 		 	  $('#flyout_general').fadeToggle('fast');
 		 	});
+			$("#resume").click(function() {
+			  $('#flyout_resume').fadeToggle('fast');
+			});
 		 });
 	</script>
 </body>

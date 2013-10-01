@@ -152,10 +152,16 @@ input[type="number"] {
 /* line 144, ../sass/main.scss */
 #options {
   position: relative;
-  top: 140px;
+  top: 150px;
 }
 
 /* line 149, ../sass/main.scss */
+#options .row {
+  position: relative;
+  z-index: 400;
+}
+
+/* line 154, ../sass/main.scss */
 #options p {
   color: #4D148C;
   padding: 10px 0;
@@ -164,16 +170,36 @@ input[type="number"] {
 /* **********************************************
    PAPER PICKUP FLYOUT
    ********************************************** */
-/* line 158, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 #flyout_tabbed {
   bottom: 75px;
-  left: 155px;
+  left: 32px;
 }
 
-/* line 163, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 #flyout_general {
-  top: 180px;
-  left: 0;
+  bottom: 7px;
+  left: 32px;
+}
+
+/* line 173, ../sass/main.scss */
+#flyout_general.flyouts:after {
+  left: 10%;
+}
+
+/* line 174, ../sass/main.scss */
+#flyout_general.flyouts:before {
+  left: 10%;
+}
+
+/* line 176, ../sass/main.scss */
+#flyout_resume.flyouts:after {
+  left: 28%;
+}
+
+/* line 177, ../sass/main.scss */
+#flyout_resume.flyouts:before {
+  left: 28%;
 }
 
 /* **********************************************
@@ -209,7 +235,7 @@ input[type="number"] {
 
 /* line 28, ../sass/_buttons.scss */
 .categories .mybutton {
-  font-size: 1.0em;
+  font-size: 1.1em;
   padding: 0.5% 1.25% 0 1.25%;
 }
 
@@ -254,7 +280,7 @@ input[type="number"] {
 
 /* line 65, ../sass/_buttons.scss */
 .categories img {
-  height: 17px;
+  height: 22px;
 }
 
 /* line 69, ../sass/_buttons.scss */
@@ -290,25 +316,26 @@ input[type="number"] {
   min-height: 300px;
   padding: 1px;
   position: absolute;
+  bottom: 7px;
+  left: 32px;
   text-align: left;
   white-space: normal;
   width: 925px;
   z-index: 1010;
 }
 
-/* line 28, ../sass/_flyout.scss */
+/* line 30, ../sass/_flyout.scss */
 .flyouts:after, .flyouts:before {
-  top: 100.25%;
+  top: 100%;
   border: solid transparent;
   content: " ";
   height: 0;
   width: 0;
-  margin-top: -1px;
   position: absolute;
   pointer-events: none;
 }
 
-/* line 39, ../sass/_flyout.scss */
+/* line 40, ../sass/_flyout.scss */
 .flyouts:after {
   border-color: rgba(136, 183, 213, 0);
   border-top-color: #FFF;
@@ -317,7 +344,7 @@ input[type="number"] {
   margin-left: -20px;
 }
 
-/* line 47, ../sass/_flyout.scss */
+/* line 48, ../sass/_flyout.scss */
 .flyouts:before {
   border-color: rgba(194, 225, 245, 0);
   /*border-top-color: #02B3F0;*/
@@ -327,7 +354,7 @@ input[type="number"] {
   margin-left: -21px;
 }
 
-/* line 56, ../sass/_flyout.scss */
+/* line 57, ../sass/_flyout.scss */
 .flyouts h4 {
   background-color: #CCC;
   /*	background: -webkit-gradient(linear, 0% 20%, 0% 100%, from(#FFFFFF), to(#B2B2B2));*/
@@ -336,7 +363,7 @@ input[type="number"] {
   padding: 3px 10px;
 }
 
-/* line 64, ../sass/_flyout.scss */
+/* line 65, ../sass/_flyout.scss */
 #paper_types {
   box-shadow: inset -4px 0px 2px -2px rgba(0, 0, 0, 0.25);
   float: left;
@@ -344,7 +371,7 @@ input[type="number"] {
   width: 250px;
 }
 
-/* line 71, ../sass/_flyout.scss */
+/* line 72, ../sass/_flyout.scss */
 #paper_types li {
   border-bottom: 1px solid #888;
   color: #444;
@@ -353,29 +380,29 @@ input[type="number"] {
   padding: 10px;
 }
 
-/* line 79, ../sass/_flyout.scss */
+/* line 80, ../sass/_flyout.scss */
 #paper_types li:last-child {
   border-bottom: none;
 }
 
-/* line 83, ../sass/_flyout.scss */
+/* line 84, ../sass/_flyout.scss */
 #paper_types li.active {
   background-color: #FFF;
   color: #00A0D3;
 }
 
-/* line 89, ../sass/_flyout.scss */
+/* line 90, ../sass/_flyout.scss */
 #paper_types li p {
   color: #444;
   font-weight: normal;
 }
 
-/* line 94, ../sass/_flyout.scss */
+/* line 95, ../sass/_flyout.scss */
 #paper_types li.active p {
   color: #444;
 }
 
-/* line 98, ../sass/_flyout.scss */
+/* line 99, ../sass/_flyout.scss */
 #tiles {
   background-color: #FFF;
   box-sizing: border-box;
@@ -392,12 +419,12 @@ input[type="number"] {
   width: 100%;
 }
 
-/* line 112, ../sass/_flyout.scss */
+/* line 113, ../sass/_flyout.scss */
 #flyout_tabbed #tiles {
   width: 675px;
 }
 
-/* line 116, ../sass/_flyout.scss */
+/* line 117, ../sass/_flyout.scss */
 .tile {
   border-radius: 3px;
   box-sizing: border-box;
@@ -409,18 +436,18 @@ input[type="number"] {
   padding: 2px;
 }
 
-/* line 127, ../sass/_flyout.scss */
+/* line 128, ../sass/_flyout.scss */
 .tile:hover {
   background: #00a0d3 url("../img/check-button-icon1.png") 95% 50% no-repeat;
-  background-size: 10% 50%;
+  background-size: 20px 20px;
   color: #FFF;
   cursor: pointer;
 }
 
-/* line 134, ../sass/_flyout.scss */
+/* line 135, ../sass/_flyout.scss */
 .selected-option {
   background: url("../img/check-button-icon1.png") 95% 50% no-repeat;
-  background-size: 10% 50%;
+  background-size: 20px 20px;
 }
 
 /* line 1, ../sass/_preview.scss */
@@ -612,7 +639,7 @@ input[type="number"] {
 }
 
 /* line 45, ../sass/_swatches.scss */
-.ultra-orange {
+.ultra_orange {
   background-color: #FF4000;
 }
 

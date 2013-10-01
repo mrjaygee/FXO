@@ -1,13 +1,7 @@
-<div id="flyout_general" class="flyouts">
+<div id="flyout_resume" class="flyouts">
 	<div class="arrow"></div>
-	<h4>General Use Papers - <span>Good for your everyday document printing needs.</span></h4>
+	<h4>Résumé Papers - <span>Best for résumés and executive correspondence.</span></h4>
 		<div id="tiles">
-		<div class="tile selected-option"><div class="swatch white">&nbsp;</div> Laser <small>(24lb)</small> </div>
-		<div class="tile"><div class="swatch white">&nbsp;</div> Laser <small>(32lb)</small> </div>
-		<div class="tile"><div class="swatch white">&nbsp;</div> Laser <small>(60lb)</small> </div>
-		<div class="tile"><div class="swatch white">&nbsp;</div> Laser Recycled <small>(24lb)</small></div>
-		<div class="tile"><div class="swatch white">&nbsp;</div> 30% Recycled</div>
-		<div class="tile"><div class="swatch white">&nbsp;</div> 100% Recycled &nbsp;<img src="img/recycle-icon.png" alt="" /></div>
 		<div class="tile"><div class="swatch white">&nbsp;</div> Gloss Text <img src="img/recycle-icon.png" alt="" /></div>
 		<div class="tile"><div class="swatch white">&nbsp;</div> Standard White <img src="img/recycle-icon.png" alt="" /></div>	
 		<div class="tile"><div class="swatch ivory">&nbsp;</div>Ivory <img src="img/recycle-icon.png" alt="" /></div>

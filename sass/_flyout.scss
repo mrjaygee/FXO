@@ -19,6 +19,8 @@
 	min-height: 300px;
 	padding: 1px;
 	position: absolute;
+		bottom: 7px;
+		left: 32px;
 	text-align: left;
 	white-space: normal;
 	width: 925px;
@@ -26,12 +28,11 @@
 }
 
 .flyouts:after, .flyouts:before {
-	top: 100.25%;
+	top: 100%;
 	border: solid transparent;
 	content: " ";
 	height: 0;
 	width: 0;
-	margin-top: -1px;
 	position: absolute;
 	pointer-events: none;
 }
@@ -126,12 +127,12 @@
 
 .tile:hover {
 	background: #00A0D3 url('../img/check-button-icon1.png') 95% 50% no-repeat;
-	background-size: 10% 50%;
+	background-size: 20px 20px;
 	color: #FFF;
 	cursor: pointer;
 }
 
 .selected-option {
 	background: url('../img/check-button-icon1.png') 95% 50% no-repeat;
-	background-size: 10% 50%;
+	background-size: 20px 20px;
 }
