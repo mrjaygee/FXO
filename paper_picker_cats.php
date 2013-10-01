@@ -50,6 +50,12 @@
   	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
 	<script>
 		 $( document ).ready(function() {
+			function paper_selection() {		 
+				$(".tile").each(function(i){
+				   $(this).removeClass('selected-option');
+				});
+			};
+				 	
 		 	$("#general_use").click(function() {
 		 	  $('#flyout_general').fadeToggle('fast');
 		 	});
@@ -59,6 +65,17 @@
 			$("#cover").click(function() {
 			  $('#flyout_cover').fadeToggle('fast');
 			});
+			$("#flyout_general .tile").eq(10).click(function() {
+			  $('.img_preview').addClass('salmon');
+			  paper_selection();
+			  $(this).addClass('selected-option');
+			});
+			$("#flyout_resume .tile").eq(02).click(function() {
+			  $('.img_preview').addClass('natural');
+			  paper_selection();
+			  $(this).addClass('selected-option');
+			});
+
 		 });
 	</script>
 </body>
