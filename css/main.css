@@ -322,7 +322,7 @@ input[type="number"] {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
-  min-height: 300px;
+  min-height: 250px;
   padding: 1px;
   position: absolute;
   bottom: 12px;
@@ -693,11 +693,26 @@ input[type="number"] {
 }
 
 /* line 81, ../sass/_swatches.scss */
+.antique_parchment {
+  background-color: #FBF4CD;
+}
+
+/* line 85, ../sass/_swatches.scss */
+.tan {
+  background-color: #F9D8A7;
+}
+
+/* line 89, ../sass/_swatches.scss */
 .soft_pink {
   background-color: #FFDEE6;
 }
 
-/* line 85, ../sass/_swatches.scss */
+/* line 93, ../sass/_swatches.scss */
 .pastel_blue {
   background-color: #FFEFCE;
+}
+
+/* line 97, ../sass/_swatches.scss */
+.willow {
+  background-color: #ECF2E6;
 }
