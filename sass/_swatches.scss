@@ -7,6 +7,62 @@
 	width: 30px;	
 }
 
+#tiles {
+	background-color: #FFF;
+	box-sizing: border-box;
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+	-webkit-column-gap:18px; /* Safari and Chrome */
+	column-gap:18px;
+	column-fill: auto;
+	-webkit-column-fill: auto;
+	float: left;
+	padding: 18px;
+	width: 100%;
+}
+
+#flyout_tabbed #tiles {
+	width: 675px;
+}
+
+.tile {
+	border-radius: 3px;
+	box-sizing: border-box;
+	break-inside: avoid-column;
+	-webkit-column-break-inside: avoid;
+	height: 36px;
+	line-height: 2em;
+	margin: 0 0 6px 0;
+	padding: 2px;
+}
+
+.tile:hover {
+	background: #00A0D3 url('../img/check-button-icon1.png') 95% 50% no-repeat;
+	background-size: 20px 20px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.selected-option {
+	background: url('../img/check-button-icon1.png') 95% 50% no-repeat;
+	background-size: 20px 20px;
+}
+
+.tile img, .flyouts legend img {
+	height: 16px;
+}
+
+.flyouts legend {
+	background-color: #F5F5F5;
+	border: 3px solid #FFF;
+	box-sizing: border-box;
+	display: block;
+	padding: 4px;
+	width: 100%;	
+}
+
+/* ************ COLORS ************* */
+
 .white {
 	background-color: #FFF;
 }

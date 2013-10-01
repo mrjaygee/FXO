@@ -56,24 +56,22 @@
 				   $(this).removeClass('selected-button');
 				});
 			};
-			
 			function paper_selection() {		 
 				$(".tile").each(function(i){
 				   $(this).removeClass('selected-option');
 				});
 			};	 	
-			
 			function flyout_selection() {
 				$('.flyouts').fadeOut('fast');
 			}
 			
 			// FLYOUTS
+			$('.mybutton img').eq(0).addClass('selected-button'); // initialize 'general use' buttons 
 		 	$("#general_use").click(function() {
 		 	  	flyout_selection();
 		 	  	$('#flyout_general').fadeToggle('fast');
-		 	  	paper_selection();
-		 	  	button_selection();
-				$('.mybutton img').eq(0).addClass('selected-button');
+		 	  	//paper_selection();
+		 	  	//button_selection();
 		 	});
 			$("#resume").click(function() {
 				flyout_selection();
@@ -82,6 +80,11 @@
 			$("#cover").click(function() {
 				flyout_selection();
 			  	$('#flyout_cover').fadeToggle('fast');
+			});
+			
+			// FLYOUT CLOSE
+			$(".close").click(function() {
+			  	$('.flyouts').fadeOut('fast');
 			});
 			
 			// SALMON COLOR SWATCH
@@ -100,7 +103,6 @@
 			  button_selection();
 			  $('.mybutton img').eq(1).addClass('selected-button');
 			});
-
 		 });
 	</script>
 </body>
