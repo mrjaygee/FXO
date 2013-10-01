@@ -39,4 +39,5 @@ Thumbs.db
 # Program Specific #
 ######################
 .esproj
-.sass-cache
+*.sass-cache*
+
