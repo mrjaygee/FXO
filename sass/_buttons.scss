@@ -59,7 +59,12 @@ $width-five: 19%;
 }
 
 .mybutton img {
-	margin-top: -3px;
+	display: none;
+	margin: -3px 5px 0 0;
+}
+
+.mybutton img.selected-button {
+	display: inline;
 }
 
 .categories img {

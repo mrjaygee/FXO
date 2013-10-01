@@ -177,36 +177,32 @@ input[type="number"] {
   left: 32px;
 }
 
-/*#flyout_general {
-	bottom: 7px;
-	left: 32px;
-}*/
-/* line 173, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 #flyout_general.flyouts:after {
   left: 10%;
 }
 
-/* line 174, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 #flyout_general.flyouts:before {
   left: 10%;
 }
 
-/* line 176, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 #flyout_resume.flyouts:after {
   left: 28%;
 }
 
-/* line 177, ../sass/main.scss */
+/* line 172, ../sass/main.scss */
 #flyout_resume.flyouts:before {
   left: 28%;
 }
 
-/* line 179, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 #flyout_cover.flyouts:after {
   left: 49%;
 }
 
-/* line 180, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 #flyout_cover.flyouts:before {
   left: 49%;
 }
@@ -284,15 +280,21 @@ input[type="number"] {
 
 /* line 61, ../sass/_buttons.scss */
 .mybutton img {
-  margin-top: -3px;
+  display: none;
+  margin: -3px 5px 0 0;
 }
 
-/* line 65, ../sass/_buttons.scss */
+/* line 66, ../sass/_buttons.scss */
+.mybutton img.selected-button {
+  display: inline;
+}
+
+/* line 70, ../sass/_buttons.scss */
 .categories img {
   height: 22px;
 }
 
-/* line 69, ../sass/_buttons.scss */
+/* line 74, ../sass/_buttons.scss */
 .btn_group {
   background-color: #aaa;
   position: relative;
@@ -312,11 +314,10 @@ input[type="number"] {
   display: none;
   background-color: #FFF;
   background-clip: padding-box;
-  /*border: 1px solid #02B3F0;*/
   border: 1px solid #999;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+  /*	-webkit-border-radius: 6px;
+  	-moz-border-radius: 6px;
+  	border-radius: 6px; */
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -333,7 +334,7 @@ input[type="number"] {
   z-index: 1010;
 }
 
-/* line 30, ../sass/_flyout.scss */
+/* line 29, ../sass/_flyout.scss */
 .flyouts:after, .flyouts:before {
   top: 100%;
   border: solid transparent;
@@ -344,7 +345,7 @@ input[type="number"] {
   pointer-events: none;
 }
 
-/* line 40, ../sass/_flyout.scss */
+/* line 39, ../sass/_flyout.scss */
 .flyouts:after {
   border-color: rgba(136, 183, 213, 0);
   border-top-color: #FFF;
@@ -353,7 +354,7 @@ input[type="number"] {
   margin-left: -20px;
 }
 
-/* line 48, ../sass/_flyout.scss */
+/* line 47, ../sass/_flyout.scss */
 .flyouts:before {
   border-color: rgba(194, 225, 245, 0);
   /*border-top-color: #02B3F0;*/
@@ -363,16 +364,16 @@ input[type="number"] {
   margin-left: -21px;
 }
 
-/* line 57, ../sass/_flyout.scss */
+/* line 56, ../sass/_flyout.scss */
 .flyouts h4 {
   background-color: #CCC;
-  /*	background: -webkit-gradient(linear, 0% 20%, 0% 100%, from(#FFFFFF), to(#B2B2B2));*/
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  /*	background: -webkit-gradient(linear, 0% 20%, 0% 100%, from(#FFFFFF), to(#B2B2B2));
+  	border-top-left-radius: 5px;
+  	border-top-right-radius: 5px; */
   padding: 3px 10px;
 }
 
-/* line 65, ../sass/_flyout.scss */
+/* line 64, ../sass/_flyout.scss */
 #paper_types {
   box-shadow: inset -4px 0px 2px -2px rgba(0, 0, 0, 0.25);
   float: left;
@@ -380,7 +381,7 @@ input[type="number"] {
   width: 250px;
 }
 
-/* line 72, ../sass/_flyout.scss */
+/* line 71, ../sass/_flyout.scss */
 #paper_types li {
   border-bottom: 1px solid #888;
   color: #444;
@@ -389,29 +390,29 @@ input[type="number"] {
   padding: 10px;
 }
 
-/* line 80, ../sass/_flyout.scss */
+/* line 79, ../sass/_flyout.scss */
 #paper_types li:last-child {
   border-bottom: none;
 }
 
-/* line 84, ../sass/_flyout.scss */
+/* line 83, ../sass/_flyout.scss */
 #paper_types li.active {
   background-color: #FFF;
   color: #00A0D3;
 }
 
-/* line 90, ../sass/_flyout.scss */
+/* line 89, ../sass/_flyout.scss */
 #paper_types li p {
   color: #444;
   font-weight: normal;
 }
 
-/* line 95, ../sass/_flyout.scss */
+/* line 94, ../sass/_flyout.scss */
 #paper_types li.active p {
   color: #444;
 }
 
-/* line 99, ../sass/_flyout.scss */
+/* line 98, ../sass/_flyout.scss */
 #tiles {
   background-color: #FFF;
   box-sizing: border-box;
@@ -428,12 +429,12 @@ input[type="number"] {
   width: 100%;
 }
 
-/* line 113, ../sass/_flyout.scss */
+/* line 112, ../sass/_flyout.scss */
 #flyout_tabbed #tiles {
   width: 675px;
 }
 
-/* line 117, ../sass/_flyout.scss */
+/* line 116, ../sass/_flyout.scss */
 .tile {
   border-radius: 3px;
   box-sizing: border-box;
@@ -445,7 +446,7 @@ input[type="number"] {
   padding: 2px;
 }
 
-/* line 128, ../sass/_flyout.scss */
+/* line 127, ../sass/_flyout.scss */
 .tile:hover {
   background: #00a0d3 url("../img/check-button-icon1.png") 95% 50% no-repeat;
   background-size: 20px 20px;
@@ -453,7 +454,7 @@ input[type="number"] {
   cursor: pointer;
 }
 
-/* line 135, ../sass/_flyout.scss */
+/* line 134, ../sass/_flyout.scss */
 .selected-option {
   background: url("../img/check-button-icon1.png") 95% 50% no-repeat;
   background-size: 20px 20px;

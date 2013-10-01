@@ -50,30 +50,55 @@
   	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
 	<script>
 		 $( document ).ready(function() {
+		 	// FUNCTIONS
+			function button_selection() {		 
+				$("button img").each(function(i){
+				   $(this).removeClass('selected-button');
+				});
+			};
+			
 			function paper_selection() {		 
 				$(".tile").each(function(i){
 				   $(this).removeClass('selected-option');
 				});
-			};
-				 	
+			};	 	
+			
+			function flyout_selection() {
+				$('.flyouts').fadeOut('fast');
+			}
+			
+			// FLYOUTS
 		 	$("#general_use").click(function() {
-		 	  $('#flyout_general').fadeToggle('fast');
+		 	  	flyout_selection();
+		 	  	$('#flyout_general').fadeToggle('fast');
+		 	  	paper_selection();
+		 	  	button_selection();
+				$('.mybutton img').eq(0).addClass('selected-button');
 		 	});
 			$("#resume").click(function() {
-			  $('#flyout_resume').fadeToggle('fast');
+				flyout_selection();
+			  	$('#flyout_resume').fadeToggle('fast');
 			});
 			$("#cover").click(function() {
-			  $('#flyout_cover').fadeToggle('fast');
+				flyout_selection();
+			  	$('#flyout_cover').fadeToggle('fast');
 			});
+			
+			// SALMON COLOR SWATCH
 			$("#flyout_general .tile").eq(10).click(function() {
-			  $('.img_preview').addClass('salmon');
-			  paper_selection();
-			  $(this).addClass('selected-option');
+			  	$('.img_preview').addClass('salmon');
+			  	paper_selection();
+			  	$(this).addClass('selected-option');
+				button_selection();
+				$('.mybutton img').eq(0).addClass('selected-button');
 			});
+			// NATURAL COLOR SWATCH
 			$("#flyout_resume .tile").eq(02).click(function() {
 			  $('.img_preview').addClass('natural');
 			  paper_selection();
 			  $(this).addClass('selected-option');
+			  button_selection();
+			  $('.mybutton img').eq(1).addClass('selected-button');
 			});
 
 		 });
