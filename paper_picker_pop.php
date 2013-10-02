@@ -162,5 +162,6 @@
 			$('.img_preview').attr()
 		 });
 	</script>
+ 	<script src="js/preview.js" type="text/javascript"></script>	
 </body>
 </html>

@@ -105,9 +105,23 @@
 				$(this).children().addClass('selected-option');			  
 			  	$('.mybutton img').eq(1).addClass('selected-button');
 			});
+			// WHITE COLOR SWATCH
+			function back_to_white() {
+				$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
+				$(this).addClass('selected-option');
+				$(this).children().addClass('selected-option');			  	
+				$('.mybutton img').eq(0).addClass('selected-button');
+			};
+						
+			$("#flyout_general .tile").eq(0).click(function() {
+				back_to_white();
+				paper_selection();
+				button_selection();
+			});
 			// PAGE PREVIEWS
 			$('.img_preview').attr()
 		 });
 	</script>
+	<script src="js/preview.js" type="text/javascript"></script>
 </body>
 </html>
