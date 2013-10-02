@@ -77,11 +77,37 @@
 		 	$("#more-options").click(function() {
 		 	  	$('#flyout_tabbed').fadeToggle('fast');
 		 	});
-			
+			// POPULAR OPTIONS
+			$('#laser24').click(function() {
+			  	button_selection();
+			  	paper_selection()
+			  	$('.mybutton img').eq(0).addClass('selected-button');
+			  	$('#general .tile').eq(0).addClass('selected-option');
+			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
+			  	$('#flyout_tabbed').fadeOut('fast');
+			});
+			$('#laser32').click(function() {
+			  	button_selection();
+			  	paper_selection();
+			  	$('.mybutton img').eq(1).addClass('selected-button');
+			  	$('#general .tile').eq(1).addClass('selected-option');
+			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
+			  	$('#flyout_tabbed').fadeOut('fast');
+			});
+			$('#recycled100').click(function() {
+			  	button_selection();
+			  	paper_selection();
+			  	$('.mybutton img').eq(2).addClass('selected-button');
+			  	$('#general .tile').eq(5).addClass('selected-option');
+			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
+				$('#flyout_tabbed').fadeOut('fast');
+			});
+
 			// FLYOUT CLOSE
 			$(".close").click(function() {
 			  	$('.flyouts').fadeOut('fast');
 			});
+			
 			// TABS
 			$('li#general').click(function() {
 				flyout_selection();
@@ -93,13 +119,19 @@
 				$(this).addClass('selected');
 				$('div#resume').delay( 400 ).fadeIn('fast');
 			});
+			$('li#cover').click(function() {
+				flyout_selection();
+				$(this).addClass('selected');
+				$('div#cover').delay( 400 ).fadeIn('fast');
+			});
+			
 			// SALMON COLOR SWATCH
 			$("#general .tile").eq(10).click(function() {
 			  	$('.img_preview').removeClass('natural').addClass('salmon');
 			  	paper_selection();
 			  	$(this).addClass('selected-option');
 				button_selection();
-				$('.mybutton img').eq(0).addClass('selected-button');
+				$('.mybutton img').eq(3).addClass('selected-button');
 			});
 			// NATURAL COLOR SWATCH
 			$("#resume .tile").eq(02).click(function() {
@@ -107,7 +139,7 @@
 			  paper_selection();
 			  $(this).addClass('selected-option');
 			  button_selection();
-			  $('.mybutton img').eq(1).addClass('selected-button');
+			  $('.mybutton img').eq(3).addClass('selected-button');
 			});
 			// PAGE PREVIEWS
 			$('.img_preview').attr()
