@@ -1,14 +1,6 @@
-/* SWATCHES */
-.swatch {
-	border: 1px solid #AAA;
-	height: 30px;
-	float: left;
-	margin-right: 8px;
-	width: 30px;	
-}
+/* TILES */
 
 #tiles {
-	/*background-color: #FFF;*/
 	box-sizing: border-box;
 	-webkit-column-count:3; /* Safari and Chrome */
 	column-count:3;
@@ -26,6 +18,7 @@
 }
 
 .tile {
+	background-color: rgba($lt-gray2, 0.75);
 	border-radius: 3px;
 	box-sizing: border-box;
 	break-inside: avoid-column;
@@ -34,18 +27,24 @@
 	line-height: 2em;
 	margin: 0 0 6px 0;
 	padding: 2px;
-}
 
-.tile:hover {
-	background: #00A0D3 url('../img/check-button-icon1.png') 95% 50% no-repeat;
-	background-size: 20px 20px;
-	color: #FFF;
-	cursor: pointer;
-}
+	&:hover {
+		background-color: $fxo-blue1;
+		color: #FFF;
+		cursor: pointer;
+	}
 
-.selected-option {
-	background: url('../img/check-button-icon1.png') 95% 50% no-repeat;
-	background-size: 20px 20px;
+	&.selected-option {
+		background-color: $fxo-blue1;
+		color: #FFF;
+		cursor: pointer;
+	}
+	
+	&.recycled {
+		background-image: url(../img/recycle-icon-gray.png);
+		background-position: 95% 57%;
+		background-repeat: no-repeat;
+	}
 }
 
 .tile img, .flyouts legend img {
@@ -70,7 +69,22 @@
 	width: 73%;
 }
 
-/* ************ COLORS ************* */
+/* ************ SWATCH COLORS ************* */
+
+.swatch {
+	border: 1px solid #AAA;
+	height: 30px;
+	float: left;
+	margin-right: 8px;
+	width: 30px;	
+}
+
+.swatch.selected-option {
+	background-image: url(../img/check-button-icon1.png);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
 
 .white {
 	background-color: #FFF;

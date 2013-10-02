@@ -1,9 +1,14 @@
+$lt-gray1: #E5E5E5;
+$lt-gray2: #F5F5F5;
+$med-gray2: #999;
+$fxo-blue1: #00A0D3;
+
 @mixin inverted-shadow { text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(255, 255, 255, 0.15); }
 @mixin regular-shadow { text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15), 0px -1px 1px rgba(255, 255, 255, 0.25); }
 
 /* In this file you should write your main styles. (or centralize your imports) */
 body {
-	background-color: #E5E5E5;
+	background-color: $lt-gray1;
 }
 
 .row {
@@ -147,6 +152,10 @@ input[type="number"] {
 #options {
 	position: relative;
 		top: 150px;
+}
+
+#options.popular {
+		top: 175px;
 }
 
 #options .row {

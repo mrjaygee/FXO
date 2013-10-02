@@ -60,6 +60,9 @@
 				$(".tile").each(function(i){
 				   $(this).removeClass('selected-option');
 				});
+				$(".swatch").each(function(i){
+				   $(this).removeClass('selected-option');
+				});
 			};	 	
 			function flyout_selection() {
 				$('#paper_types li').each(function(i){
@@ -72,6 +75,12 @@
 				   });
 			};
 			
+			function general_tab_selection() {
+				flyout_selection()
+				$('li#general').addClass('selected');
+				$('div#general').fadeIn('fast');
+			};
+			
 			// FLYOUTS
 			$('.mybutton img').eq(0).addClass('selected-button'); // initialize 'Laser (24lb)' buttons 
 		 	$("#more-options").click(function() {
@@ -80,27 +89,33 @@
 			// POPULAR OPTIONS
 			$('#laser24').click(function() {
 			  	button_selection();
-			  	paper_selection()
+			  	paper_selection();
+			  	$('#flyout_tabbed').fadeOut('fast');			  	
 			  	$('.mybutton img').eq(0).addClass('selected-button');
-			  	$('#general .tile').eq(0).addClass('selected-option');
+			  	$('#general .tile').delay(800).eq(0).addClass('selected-option');
+			  	$('#general .tile').delay(800).eq(0).children().addClass('selected-option');
 			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
-			  	$('#flyout_tabbed').fadeOut('fast');
+			  	general_tab_selection();
 			});
 			$('#laser32').click(function() {
 			  	button_selection();
 			  	paper_selection();
-			  	$('.mybutton img').eq(1).addClass('selected-button');
-			  	$('#general .tile').eq(1).addClass('selected-option');
-			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
 			  	$('#flyout_tabbed').fadeOut('fast');
+			  	$('.mybutton img').eq(1).addClass('selected-button');
+			  	$('#general .tile').delay(800).eq(1).addClass('selected-option');
+			  	$('#general .tile').delay(800).eq(1).children().addClass('selected-option');
+			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
+			  	general_tab_selection();
 			});
 			$('#recycled100').click(function() {
 			  	button_selection();
 			  	paper_selection();
+			  	$('#flyout_tabbed').fadeOut('fast');
 			  	$('.mybutton img').eq(2).addClass('selected-button');
-			  	$('#general .tile').eq(5).addClass('selected-option');
+			  	$('#general .tile').delay(800).eq(5).addClass('selected-option');
+			  	$('#general .tile').delay(800).eq(5).children().addClass('selected-option');
 			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
-				$('#flyout_tabbed').fadeOut('fast');
+				general_tab_selection();
 			});
 
 			// FLYOUT CLOSE
@@ -129,16 +144,18 @@
 			$("#general .tile").eq(10).click(function() {
 			  	$('.img_preview').removeClass('natural').addClass('salmon');
 			  	paper_selection();
+			  	button_selection();
 			  	$(this).addClass('selected-option');
-				button_selection();
+			  	$(this).children().addClass('selected-option');
 				$('.mybutton img').eq(3).addClass('selected-button');
 			});
 			// NATURAL COLOR SWATCH
 			$("#resume .tile").eq(02).click(function() {
 			  $('.img_preview').removeClass('natural').addClass('natural');
 			  paper_selection();
-			  $(this).addClass('selected-option');
 			  button_selection();
+			  $(this).addClass('selected-option');
+			  $(this).children().addClass('selected-option');
 			  $('.mybutton img').eq(3).addClass('selected-button');
 			});
 			// PAGE PREVIEWS

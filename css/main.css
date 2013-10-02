@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /* In this file you should write your main styles. (or centralize your imports) */
-/* line 5, ../sass/main.scss */
+/* line 10, ../sass/main.scss */
 body {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
-/* line 9, ../sass/main.scss */
+/* line 14, ../sass/main.scss */
 .row {
   height: auto;
   margin: 0 auto;
@@ -17,7 +17,7 @@ body {
    TOP BAR 
    **************************************/
 /******** */
-/* line 20, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 #topbar {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f1f3), to(#d7d9d9));
   height: 45px;
@@ -30,7 +30,7 @@ body {
 /* **********************************************
    QUESTION BAR 
    ********************************************** */
-/* line 34, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 #question {
   box-sizing: border-box;
   /*	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1C71A4), to(#299BDD));*/
@@ -43,7 +43,7 @@ body {
   z-index: 500;
 }
 
-/* line 46, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 #question h3 {
   color: #FFF;
   text-align: center;
@@ -56,14 +56,14 @@ body {
 /* **********************************************
    SIDEBAR ELEMENTS 
    ********************************************** */
-/* line 64, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 #sidebar {
   box-sizing: border-box;
   float: left;
   width: 234px;
 }
 
-/* line 70, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 #sidebar ul {
   background-color: #F5F5F5;
   border: 1px solid #CCC;
@@ -73,54 +73,54 @@ body {
   padding: 0;
 }
 
-/* line 79, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 #sidebar li {
   border-bottom: 1px solid #CCC;
   list-style-image: url("../img/step_open.png");
   padding: 5px 10px 7px 10px;
 }
 
-/* line 85, ../sass/main.scss */
+/* line 90, ../sass/main.scss */
 #sidebar li:last-child {
   border-bottom: none;
 }
 
-/* line 89, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 #sidebar li.complete {
   list-style-image: url("../img/step_complete.png");
   color: #666;
 }
 
-/* line 94, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 #sidebar li.current {
   list-style-image: url("../img/step_current.png");
   color: #333;
 }
 
-/* line 99, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 #sidebar .group {
   background-color: #FFF;
   border-bottom: 1px solid #CCC;
   box-shadow: inset 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 105, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 #sidebar .group li {
   border-bottom: 1px solid #E2E2E2;
 }
 
-/* line 109, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
 #sidebar .group li:last-child {
   border-bottom: none;
 }
 
-/* line 113, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .edit_link {
   font-size: 75%;
   text-decoration: underline;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 #estimate {
   background-color: #F5F5F5;
   border: 1px solid #CCC;
@@ -129,19 +129,19 @@ body {
   text-align: right;
 }
 
-/* line 126, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 #estimate h3 {
   line-height: 1.2em;
 }
 
-/* line 130, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 #estimate form {
   padding-top: 15px;
   border-top: 1px solid #ccc;
   margin-top: 15px;
 }
 
-/* line 136, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 input[type="number"] {
   padding: 5px;
   width: 60px;
@@ -150,19 +150,24 @@ input[type="number"] {
 /* **********************************************
    SELECTION BUTTONS
    ********************************************** */
-/* line 147, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 #options {
   position: relative;
   top: 150px;
 }
 
-/* line 152, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
+#options.popular {
+  top: 175px;
+}
+
+/* line 161, ../sass/main.scss */
 #options .row {
   position: relative;
   z-index: 400;
 }
 
-/* line 157, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 #options p {
   color: #4D148C;
   padding: 10px 0;
@@ -171,38 +176,38 @@ input[type="number"] {
 /* **********************************************
    PAPER PICKUP FLYOUT
    ********************************************** */
-/* line 166, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 #flyout_tabbed {
   bottom: 75px;
   left: 32px;
 }
 
-/* line 171, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 #flyout_general.flyouts:after {
   left: 10%;
 }
 
-/* line 172, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 #flyout_general.flyouts:before {
   left: 10%;
 }
 
-/* line 174, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 #flyout_resume.flyouts:after {
   left: 28%;
 }
 
-/* line 175, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 #flyout_resume.flyouts:before {
   left: 28%;
 }
 
-/* line 177, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 #flyout_cover.flyouts:after {
   left: 49%;
 }
 
-/* line 178, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 #flyout_cover.flyouts:before {
   left: 49%;
 }
@@ -291,14 +296,32 @@ input[type="number"] {
 
 /* line 70, ../sass/_buttons.scss */
 .btn_group {
-  background-color: #aaa;
-  position: relative;
-  z-index: 300;
-  left: -3px;
-  top: -3px;
-  border-radius: 5px;
+  background-color: #999999;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   height: 67px;
+  position: relative;
+  top: -3px;
+  left: -3px;
   width: 59.7%;
+  z-index: 300;
+}
+
+/* line 83, ../sass/_buttons.scss */
+.btn_group span {
+  color: whitesmoke;
+  background-color: #999999;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 80%;
+  padding: 6px;
+  position: absolute;
+  top: -26px;
+  left: 0;
+  text-align: center;
+  width: 186px;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(255, 255, 255, 0.15);
 }
 
 /* **********************************************
@@ -384,7 +407,7 @@ input[type="number"] {
 
 /* line 76, ../sass/_flyout.scss */
 #paper_types li {
-  background-color: rgba(204, 204, 204, 0.3);
+  background-color: rgba(153, 153, 153, 0.3);
   border-bottom: 1px solid #888;
   box-shadow: inset -4px 0px 2px -2px rgba(0, 0, 0, 0.25);
   color: #444;
@@ -439,7 +462,7 @@ input[type="number"] {
 /* line 19, ../sass/_preview.scss */
 .img_preview {
   border: 1px solid #333;
-  box-shadow: 0px 3px 5px #444;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
   /*width: 468px;*/
   width: 515px;
 }
@@ -549,19 +572,9 @@ input[type="number"] {
   margin-top: -15px;
 }
 
-/* SWATCHES */
-/* line 2, ../sass/_swatches.scss */
-.swatch {
-  border: 1px solid #AAA;
-  height: 30px;
-  float: left;
-  margin-right: 8px;
-  width: 30px;
-}
-
-/* line 10, ../sass/_swatches.scss */
+/* TILES */
+/* line 3, ../sass/_swatches.scss */
 #tiles {
-  /*background-color: #FFF;*/
   box-sizing: border-box;
   -webkit-column-count: 3;
   /* Safari and Chrome */
@@ -576,13 +589,14 @@ input[type="number"] {
   width: 100%;
 }
 
-/* line 24, ../sass/_swatches.scss */
+/* line 16, ../sass/_swatches.scss */
 #flyout_tabbed #tiles {
   width: 675px;
 }
 
-/* line 28, ../sass/_swatches.scss */
+/* line 20, ../sass/_swatches.scss */
 .tile {
+  background-color: rgba(245, 245, 245, 0.75);
   border-radius: 3px;
   box-sizing: border-box;
   break-inside: avoid-column;
@@ -592,27 +606,31 @@ input[type="number"] {
   margin: 0 0 6px 0;
   padding: 2px;
 }
-
-/* line 39, ../sass/_swatches.scss */
+/* line 31, ../sass/_swatches.scss */
 .tile:hover {
-  background: #00a0d3 url("../img/check-button-icon1.png") 95% 50% no-repeat;
-  background-size: 20px 20px;
+  background-color: #00a0d3;
   color: #FFF;
   cursor: pointer;
 }
-
-/* line 46, ../sass/_swatches.scss */
-.selected-option {
-  background: url("../img/check-button-icon1.png") 95% 50% no-repeat;
-  background-size: 20px 20px;
+/* line 37, ../sass/_swatches.scss */
+.tile.selected-option {
+  background-color: #00a0d3;
+  color: #FFF;
+  cursor: pointer;
+}
+/* line 43, ../sass/_swatches.scss */
+.tile.recycled {
+  background-image: url(../img/recycle-icon-gray.png);
+  background-position: 95% 57%;
+  background-repeat: no-repeat;
 }
 
-/* line 51, ../sass/_swatches.scss */
+/* line 50, ../sass/_swatches.scss */
 .tile img, .flyouts legend img {
   height: 16px;
 }
 
-/* line 55, ../sass/_swatches.scss */
+/* line 54, ../sass/_swatches.scss */
 .flyouts legend {
   background-color: #F5F5F5;
   border: 3px solid #FFF;
@@ -624,7 +642,7 @@ input[type="number"] {
   width: 100%;
 }
 
-/* line 66, ../sass/_swatches.scss */
+/* line 65, ../sass/_swatches.scss */
 #flyout_tabbed legend {
   position: absolute;
   bottom: 0;
@@ -632,118 +650,135 @@ input[type="number"] {
   width: 73%;
 }
 
-/* ************ COLORS ************* */
-/* line 75, ../sass/_swatches.scss */
+/* ************ SWATCH COLORS ************* */
+/* line 74, ../sass/_swatches.scss */
+.swatch {
+  border: 1px solid #AAA;
+  height: 30px;
+  float: left;
+  margin-right: 8px;
+  width: 30px;
+}
+
+/* line 82, ../sass/_swatches.scss */
+.swatch.selected-option {
+  background-image: url(../img/check-button-icon1.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+/* line 89, ../sass/_swatches.scss */
 .white {
   background-color: #FFF;
 }
 
-/* line 78, ../sass/_swatches.scss */
+/* line 92, ../sass/_swatches.scss */
 .ivory {
   background-color: #feefca;
 }
 
-/* line 82, ../sass/_swatches.scss */
+/* line 96, ../sass/_swatches.scss */
 .canary {
   background-color: #fff07b;
 }
 
-/* line 86, ../sass/_swatches.scss */
+/* line 100, ../sass/_swatches.scss */
 .salmon {
   background-color: #f87d5e;
 }
 
-/* line 90, ../sass/_swatches.scss */
+/* line 104, ../sass/_swatches.scss */
 .orchid {
   background-color: #bcbcf3;
 }
 
-/* line 94, ../sass/_swatches.scss */
+/* line 108, ../sass/_swatches.scss */
 .pastel_blue {
   background-color: #95bfe1;
 }
 
-/* line 98, ../sass/_swatches.scss */
+/* line 112, ../sass/_swatches.scss */
 .green {
   background-color: #9fcfad;
 }
 
-/* line 102, ../sass/_swatches.scss */
+/* line 116, ../sass/_swatches.scss */
 .ultra_lemon {
   background-color: #f4fd0e;
 }
 
-/* line 106, ../sass/_swatches.scss */
+/* line 120, ../sass/_swatches.scss */
 .sun_yellow {
   background-color: #fbd00e;
 }
 
-/* line 110, ../sass/_swatches.scss */
+/* line 124, ../sass/_swatches.scss */
 .ultra_orange {
   background-color: #FF4000;
 }
 
-/* line 114, ../sass/_swatches.scss */
+/* line 128, ../sass/_swatches.scss */
 .red {
   background-color: #B20000;
 }
 
-/* line 118, ../sass/_swatches.scss */
+/* line 132, ../sass/_swatches.scss */
 .ultra_fuschia {
   background-color: #D900D9;
 }
 
-/* line 122, ../sass/_swatches.scss */
+/* line 136, ../sass/_swatches.scss */
 .bright_blue {
   background-color: #26C9FF;
 }
 
-/* line 126, ../sass/_swatches.scss */
+/* line 140, ../sass/_swatches.scss */
 .ultra_lime {
   background-color: #D2FF4D;
 }
 
-/* line 130, ../sass/_swatches.scss */
+/* line 144, ../sass/_swatches.scss */
 .natural {
   background-color: #FBF8F2;
 }
 
-/* line 134, ../sass/_swatches.scss */
+/* line 148, ../sass/_swatches.scss */
 .sand_stone {
   background-color: #F3EBEA;
 }
 
-/* line 138, ../sass/_swatches.scss */
+/* line 152, ../sass/_swatches.scss */
 .sea_spray {
   background-color: #EDF3FD;
 }
 
-/* line 142, ../sass/_swatches.scss */
+/* line 156, ../sass/_swatches.scss */
 .antique_gray {
   background-color: #FBF4CD;
 }
 
-/* line 146, ../sass/_swatches.scss */
+/* line 160, ../sass/_swatches.scss */
 .antique_parchment {
   background-color: #FBF4CD;
 }
 
-/* line 150, ../sass/_swatches.scss */
+/* line 164, ../sass/_swatches.scss */
 .tan {
   background-color: #F9D8A7;
 }
 
-/* line 154, ../sass/_swatches.scss */
+/* line 168, ../sass/_swatches.scss */
 .soft_pink {
   background-color: #FFDEE6;
 }
 
-/* line 158, ../sass/_swatches.scss */
+/* line 172, ../sass/_swatches.scss */
 .pastel_blue {
   background-color: #FFEFCE;
 }
 
-/* line 162, ../sass/_swatches.scss */
+/* line 176, ../sass/_swatches.scss */
 .willow {
   background-color: #ECF2E6;
 }

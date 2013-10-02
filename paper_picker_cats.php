@@ -91,17 +91,19 @@
 			$("#flyout_general .tile").eq(10).click(function() {
 			  	$('.img_preview').removeClass('natural').addClass('salmon');
 			  	paper_selection();
+			  	button_selection();
 			  	$(this).addClass('selected-option');
-				button_selection();
+			    $(this).children().addClass('selected-option');			  	
 				$('.mybutton img').eq(0).addClass('selected-button');
 			});
 			// NATURAL COLOR SWATCH
 			$("#flyout_resume .tile").eq(02).click(function() {
 			  $('.img_preview').removeClass('natural').addClass('natural');
-			  paper_selection();
-			  $(this).addClass('selected-option');
-			  button_selection();
-			  $('.mybutton img').eq(1).addClass('selected-button');
+			  	paper_selection();
+			  	button_selection();
+			  	$(this).addClass('selected-option');
+				$(this).children().addClass('selected-option');			  
+			  	$('.mybutton img').eq(1).addClass('selected-button');
 			});
 			// PAGE PREVIEWS
 			$('.img_preview').attr()
