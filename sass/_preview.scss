@@ -47,66 +47,81 @@
 }
 
 #arrow_l, #arrow_r {
+	height: 25px;
 	position: absolute;
 	/*bottom: 11px;*/
-	bottom: 210px;
-}
-
-#arrow_l:hover, #arrow_r:hover, #arrow_t:hover, #arrow_b:hover {
-	cursor: pointer;
-}
-
-#arrow_l:after, #arrow_l:before {
-	right: 100%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
+		bottom: 210px;
+	width: 25px;
+	
+	&:hover { cursor: pointer; }
 }
 
 #arrow_l {
 	background: #FFF;
 	left: 0px;
-}
-
-#arrow_l:after {
-	border-color: rgba(255, 255, 255, 0);
-	border-right-color: #ffffff;
-	border-width: 10px;
-	margin-top: -10px;
-}
-#arrow_l:before {
-	border-color: rgba(209, 209, 209, 0);
-	border-right-color: #d1d1d1;
-	border-width: 15px;
-	margin-top: -15px;
+	
+	&:after {
+		right: 100%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		
+		border-color: rgba(255, 255, 255, 0);
+		border-right-color: #ffffff;
+		border-width: 10px;
+		margin-top: -10px;
+	}
+	
+	&:before {
+		right: 100%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		
+		border-color: rgba(209, 209, 209, 0);
+		border-right-color: #d1d1d1;
+		border-width: 15px;
+		margin-top: -15px;
+	}
 }
 
 #arrow_r {
 	background: #FFF;
 	right: 0px;
-}
-#arrow_r:after, #arrow_r:before {
-	left: 100%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
 
-#arrow_r:after {
-	border-color: rgba(255, 255, 255, 0);
-	border-left-color: #ffffff;
-	border-width: 10px;
-	margin-top: -10px;
-}
-#arrow_r:before {
-	border-color: rgba(209, 209, 209, 0);
-	border-left-color: #d1d1d1;
-	border-width: 15px;
-	margin-top: -15px;
+	&:after {
+		left: 100%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+
+		border-color: rgba(255, 255, 255, 0);
+		border-left-color: #ffffff;
+		border-width: 10px;
+		margin-top: -10px;
+	}
+	
+	&:before {
+		left: 100%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		
+		border-color: rgba(209, 209, 209, 0);
+		border-left-color: #d1d1d1;
+		border-width: 15px;
+		margin-top: -15px;
+	}
 }

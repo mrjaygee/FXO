@@ -159,9 +159,11 @@
 			  $('.mybutton img').eq(3).addClass('selected-button');
 			});
 			// PAGE PREVIEWS
-			$('.img_preview').attr()
+			$('#arrow_r').click(function() {	
+				alert("hello");
+				$('.img_preview').attr("src", "img/resume_horiz_2pg_Page_2.png");
+			});
 		 });
 	</script>
- 	<script src="js/preview.js" type="text/javascript"></script>	
 </body>
 </html>
