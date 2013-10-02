@@ -1,7 +1,7 @@
 <div id="flyout_cover" class="flyouts">
 	<div class="close"><img src="img/x-button-icon.png"></div>
 	<h4>Card &amp; Cover Stock - <span>Best for business cards and report covers.</span></h4>
-		<div id="tiles">
+	<div id="tiles">
 		<div class="tile"><div class="swatch white">&nbsp;</div> Ultra Bright White</div>
 		<div class="tile"><div class="swatch white">&nbsp;</div> 110lb. Index</div>
 		<div class="tile"><div class="swatch white">&nbsp;</div> Laser <small>80lb.</small></div>

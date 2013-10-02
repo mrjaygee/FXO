@@ -50,10 +50,67 @@
   	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
 	<script>
 		 $( document ).ready(function() {
+		 	// FUNCTIONS
+			function button_selection() {		 
+				$("button img").each(function(i){
+				   $(this).removeClass('selected-button');
+				});
+			};
+			function paper_selection() {		 
+				$(".tile").each(function(i){
+				   $(this).removeClass('selected-option');
+				});
+			};	 	
+			function flyout_selection() {
+				$('#paper_types li').each(function(i){
+					$(this).removeClass('selected');
+				});
+				var arr = [ "div#general", "div#resume", "div#cover" ];
+				$.each(arr, function(index, value) {
+				       $(arr[index]).fadeOut('fast');
+				       //return (this != "three"); // will stop running after "three"
+				   });
+			};
+			
+			// FLYOUTS
+			$('.mybutton img').eq(0).addClass('selected-button'); // initialize 'Laser (24lb)' buttons 
 		 	$("#more-options").click(function() {
-		 	  $('#flyout_tabbed').fadeToggle('fast');
+		 	  	$('#flyout_tabbed').fadeToggle('fast');
 		 	});
-		 $( "#page_indicator" ).draggable( "option", "axis", "y" );	
+			
+			// FLYOUT CLOSE
+			$(".close").click(function() {
+			  	$('.flyouts').fadeOut('fast');
+			});
+			// TABS
+			$('li#general').click(function() {
+				flyout_selection();
+				$(this).addClass('selected');
+				$('div#general').delay( 400 ).fadeIn('fast');
+			});
+			$('li#resume').click(function() {
+				flyout_selection();
+				$(this).addClass('selected');
+				$('div#resume').delay( 400 ).fadeIn('fast');
+			});
+			// SALMON COLOR SWATCH
+			$("#general .tile").eq(10).click(function() {
+			  	$('.img_preview').removeClass('natural').addClass('salmon');
+			  	paper_selection();
+			  	$(this).addClass('selected-option');
+				button_selection();
+				$('.mybutton img').eq(0).addClass('selected-button');
+			});
+			// NATURAL COLOR SWATCH
+			$("#resume .tile").eq(02).click(function() {
+			  $('.img_preview').removeClass('natural').addClass('natural');
+			  paper_selection();
+			  $(this).addClass('selected-option');
+			  button_selection();
+			  $('.mybutton img').eq(1).addClass('selected-button');
+			});
+			// PAGE PREVIEWS
+			$('.img_preview').attr()
 		 });
 	</script>
 </body>

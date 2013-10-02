@@ -68,14 +68,15 @@
 }
 
 #paper_types {
-	box-shadow: inset -4px 0px 2px -2px rgba(0, 0, 0, 0.25);
 	float: left;
 	min-height: 330px;
 	width: 250px;	
 }
 
 #paper_types li {
+	background-color: rgba(204, 204, 204, 0.3);
 	border-bottom: 1px solid #888;
+	box-shadow: inset -4px 0px 2px -2px rgba(0, 0, 0, 0.25);
 	color: #444;
 	cursor: pointer;
 	font-weight: bold;
@@ -86,8 +87,9 @@
 	border-bottom: none;
 }
 
-#paper_types li.active {
-	background-color: #FFF;
+#paper_types li.selected {
+	background-color: transparent;
+	box-shadow: none;
 	color: #00A0D3;
 }
 
