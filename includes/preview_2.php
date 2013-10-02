@@ -3,7 +3,7 @@
 		<div id="page_number">
 			<form method="post" action="">
 				<label for="current_page">Page</label>
-				<input type="text" name="current_page" value="1" /> of 3
+				<input type="text" name="current_page" value="1" /> of 2
 			</form>
 		</div>
 		<span id="arrow_l"></span>

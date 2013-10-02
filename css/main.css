@@ -312,8 +312,7 @@ input[type="number"] {
 /* line 5, ../sass/_flyout.scss */
 .flyouts {
   display: none;
-  background-color: #FFF;
-  background-clip: padding-box;
+  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid #999;
   /*	-webkit-border-radius: 6px;
   	-moz-border-radius: 6px;
@@ -321,8 +320,6 @@ input[type="number"] {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   min-height: 250px;
   padding: 1px;
   position: absolute;
@@ -334,7 +331,7 @@ input[type="number"] {
   z-index: 1010;
 }
 
-/* line 29, ../sass/_flyout.scss */
+/* line 26, ../sass/_flyout.scss */
 .flyouts:after, .flyouts:before {
   top: 100%;
   border: solid transparent;
@@ -345,7 +342,7 @@ input[type="number"] {
   pointer-events: none;
 }
 
-/* line 39, ../sass/_flyout.scss */
+/* line 36, ../sass/_flyout.scss */
 .flyouts:after {
   border-color: rgba(136, 183, 213, 0);
   border-top-color: #FFF;
@@ -354,7 +351,7 @@ input[type="number"] {
   margin-left: -20px;
 }
 
-/* line 47, ../sass/_flyout.scss */
+/* line 44, ../sass/_flyout.scss */
 .flyouts:before {
   border-color: rgba(194, 225, 245, 0);
   /*border-top-color: #02B3F0;*/
@@ -364,7 +361,7 @@ input[type="number"] {
   margin-left: -21px;
 }
 
-/* line 56, ../sass/_flyout.scss */
+/* line 53, ../sass/_flyout.scss */
 .flyouts h4 {
   background-color: #CCC;
   background: -webkit-gradient(linear, 0% 20%, 0% 100%, from(whitesmoke), to(#b2b2b2));
@@ -375,7 +372,7 @@ input[type="number"] {
   text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(255, 255, 255, 0.15);
 }
 
-/* line 66, ../sass/_flyout.scss */
+/* line 63, ../sass/_flyout.scss */
 .close {
   cursor: pointer;
   position: absolute;
@@ -383,7 +380,7 @@ input[type="number"] {
   top: 3px;
 }
 
-/* line 73, ../sass/_flyout.scss */
+/* line 70, ../sass/_flyout.scss */
 #paper_types {
   box-shadow: inset -4px 0px 2px -2px rgba(0, 0, 0, 0.25);
   float: left;
@@ -391,7 +388,7 @@ input[type="number"] {
   width: 250px;
 }
 
-/* line 80, ../sass/_flyout.scss */
+/* line 77, ../sass/_flyout.scss */
 #paper_types li {
   border-bottom: 1px solid #888;
   color: #444;
@@ -400,24 +397,24 @@ input[type="number"] {
   padding: 10px;
 }
 
-/* line 88, ../sass/_flyout.scss */
+/* line 85, ../sass/_flyout.scss */
 #paper_types li:last-child {
   border-bottom: none;
 }
 
-/* line 92, ../sass/_flyout.scss */
+/* line 89, ../sass/_flyout.scss */
 #paper_types li.active {
   background-color: #FFF;
   color: #00A0D3;
 }
 
-/* line 98, ../sass/_flyout.scss */
+/* line 95, ../sass/_flyout.scss */
 #paper_types li p {
   color: #444;
   font-weight: normal;
 }
 
-/* line 103, ../sass/_flyout.scss */
+/* line 100, ../sass/_flyout.scss */
 #paper_types li.active p {
   color: #444;
 }
@@ -567,7 +564,7 @@ input[type="number"] {
 
 /* line 10, ../sass/_swatches.scss */
 #tiles {
-  background-color: #FFF;
+  /*background-color: #FFF;*/
   box-sizing: border-box;
   -webkit-column-count: 3;
   /* Safari and Chrome */
@@ -624,122 +621,124 @@ input[type="number"] {
   border: 3px solid #FFF;
   box-sizing: border-box;
   display: block;
+  font-size: 85%;
   padding: 4px;
+  text-align: right;
   width: 100%;
 }
 
 /* ************ COLORS ************* */
-/* line 66, ../sass/_swatches.scss */
+/* line 68, ../sass/_swatches.scss */
 .white {
   background-color: #FFF;
 }
 
-/* line 69, ../sass/_swatches.scss */
+/* line 71, ../sass/_swatches.scss */
 .ivory {
   background-color: #feefca;
 }
 
-/* line 73, ../sass/_swatches.scss */
+/* line 75, ../sass/_swatches.scss */
 .canary {
   background-color: #fff07b;
 }
 
-/* line 77, ../sass/_swatches.scss */
+/* line 79, ../sass/_swatches.scss */
 .salmon {
   background-color: #f87d5e;
 }
 
-/* line 81, ../sass/_swatches.scss */
+/* line 83, ../sass/_swatches.scss */
 .orchid {
   background-color: #bcbcf3;
 }
 
-/* line 85, ../sass/_swatches.scss */
+/* line 87, ../sass/_swatches.scss */
 .pastel_blue {
   background-color: #95bfe1;
 }
 
-/* line 89, ../sass/_swatches.scss */
+/* line 91, ../sass/_swatches.scss */
 .green {
   background-color: #9fcfad;
 }
 
-/* line 93, ../sass/_swatches.scss */
+/* line 95, ../sass/_swatches.scss */
 .ultra_lemon {
   background-color: #f4fd0e;
 }
 
-/* line 97, ../sass/_swatches.scss */
+/* line 99, ../sass/_swatches.scss */
 .sun_yellow {
   background-color: #fbd00e;
 }
 
-/* line 101, ../sass/_swatches.scss */
+/* line 103, ../sass/_swatches.scss */
 .ultra_orange {
   background-color: #FF4000;
 }
 
-/* line 105, ../sass/_swatches.scss */
+/* line 107, ../sass/_swatches.scss */
 .red {
   background-color: #B20000;
 }
 
-/* line 109, ../sass/_swatches.scss */
+/* line 111, ../sass/_swatches.scss */
 .ultra_fuschia {
   background-color: #D900D9;
 }
 
-/* line 113, ../sass/_swatches.scss */
+/* line 115, ../sass/_swatches.scss */
 .bright_blue {
   background-color: #26C9FF;
 }
 
-/* line 117, ../sass/_swatches.scss */
+/* line 119, ../sass/_swatches.scss */
 .ultra_lime {
   background-color: #D2FF4D;
 }
 
-/* line 121, ../sass/_swatches.scss */
+/* line 123, ../sass/_swatches.scss */
 .natural {
   background-color: #FBF8F2;
 }
 
-/* line 125, ../sass/_swatches.scss */
+/* line 127, ../sass/_swatches.scss */
 .sand_stone {
   background-color: #F3EBEA;
 }
 
-/* line 129, ../sass/_swatches.scss */
+/* line 131, ../sass/_swatches.scss */
 .sea_spray {
   background-color: #EDF3FD;
 }
 
-/* line 133, ../sass/_swatches.scss */
+/* line 135, ../sass/_swatches.scss */
 .antique_gray {
   background-color: #FBF4CD;
 }
 
-/* line 137, ../sass/_swatches.scss */
+/* line 139, ../sass/_swatches.scss */
 .antique_parchment {
   background-color: #FBF4CD;
 }
 
-/* line 141, ../sass/_swatches.scss */
+/* line 143, ../sass/_swatches.scss */
 .tan {
   background-color: #F9D8A7;
 }
 
-/* line 145, ../sass/_swatches.scss */
+/* line 147, ../sass/_swatches.scss */
 .soft_pink {
   background-color: #FFDEE6;
 }
 
-/* line 149, ../sass/_swatches.scss */
+/* line 151, ../sass/_swatches.scss */
 .pastel_blue {
   background-color: #FFEFCE;
 }
 
-/* line 153, ../sass/_swatches.scss */
+/* line 155, ../sass/_swatches.scss */
 .willow {
   background-color: #ECF2E6;
 }

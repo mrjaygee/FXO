@@ -89,7 +89,7 @@
 			
 			// SALMON COLOR SWATCH
 			$("#flyout_general .tile").eq(10).click(function() {
-			  	$('.img_preview').addClass('salmon');
+			  	$('.img_preview').removeClass('natural').addClass('salmon');
 			  	paper_selection();
 			  	$(this).addClass('selected-option');
 				button_selection();
@@ -97,12 +97,14 @@
 			});
 			// NATURAL COLOR SWATCH
 			$("#flyout_resume .tile").eq(02).click(function() {
-			  $('.img_preview').addClass('natural');
+			  $('.img_preview').removeClass('natural').addClass('natural');
 			  paper_selection();
 			  $(this).addClass('selected-option');
 			  button_selection();
 			  $('.mybutton img').eq(1).addClass('selected-button');
 			});
+			// PAGE PREVIEWS
+			$('.img_preview').attr()
 		 });
 	</script>
 </body>

@@ -8,7 +8,7 @@
 }
 
 #tiles {
-	background-color: #FFF;
+	/*background-color: #FFF;*/
 	box-sizing: border-box;
 	-webkit-column-count:3; /* Safari and Chrome */
 	column-count:3;
@@ -57,7 +57,9 @@
 	border: 3px solid #FFF;
 	box-sizing: border-box;
 	display: block;
+	font-size: 85%;
 	padding: 4px;
+	text-align: right;
 	width: 100%;	
 }
 
