@@ -8,17 +8,14 @@ $width-five: 19%;
 	border-radius: 5px;
 	box-sizing: border-box;
 	color: #FFF;
-	float: left;
 	font-family: Arial, sans-serif;
 	font-size: 1.1em;
 	height: 60px;
 	position: relative;
 	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.35), 0px 1px 1px rgba(255, 255, 255, 0.15);
-	z-index: 400;
-	/* **** USE THESE FOR 4 BUTTON LAYOUT ****
-	margin: 0 1.76% 0 0; 
-	padding: 0 1.5%;
-	width: 23.68%;*/
+	margin: 0 auto; 
+	padding: 0 8%;
+	width: auto;
 }
 
 .mybutton:hover {
@@ -67,10 +64,12 @@ $width-five: 19%;
 /* BUTTONS ON PAPER PICKER PAGE */
 
 #options .mybutton {
+	float: left;
 	/* **** USE THESE FOR 5 BUTTON LAYOUT **** */
 	margin: $margin-five;
 	padding: $padding-five;
 	width: $width-five;
+	z-index: 400;
 }
 
 .btn_group {

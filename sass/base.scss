@@ -39,7 +39,7 @@ a, a:hover, a:visited {
 }
 
 small {
-	font-size: 80%;
+	font-size: 70%;
 }
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -112,6 +112,7 @@ textarea {
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
+	text-rendering: optimizelegibility;
 }
 
 h3 {

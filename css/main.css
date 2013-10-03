@@ -227,20 +227,17 @@ input[type="number"] {
   border-radius: 5px;
   box-sizing: border-box;
   color: #FFF;
-  float: left;
   font-family: Arial, sans-serif;
   font-size: 1.1em;
   height: 60px;
   position: relative;
   text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.35), 0px 1px 1px rgba(255, 255, 255, 0.15);
-  z-index: 400;
-  /* **** USE THESE FOR 4 BUTTON LAYOUT ****
-  margin: 0 1.76% 0 0; 
-  padding: 0 1.5%;
-  width: 23.68%;*/
+  margin: 0 auto;
+  padding: 0 8%;
+  width: auto;
 }
 
-/* line 24, ../sass/_buttons.scss */
+/* line 21, ../sass/_buttons.scss */
 .mybutton:hover {
   /*	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,150,221,1)), color-stop(100%,rgba(40,129,188,1)));*/
   background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#91e0fa), to(#00aae0));
@@ -248,59 +245,61 @@ input[type="number"] {
   cursor: pointer;
 }
 
-/* line 31, ../sass/_buttons.scss */
+/* line 28, ../sass/_buttons.scss */
 .mybutton.active {
   background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#ad92c9), to(#4d148c));
   border: #777;
 }
 
-/* line 36, ../sass/_buttons.scss */
+/* line 33, ../sass/_buttons.scss */
 .mybutton.active:hover {
   background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#b89cd6), to(#5a17a3));
 }
 
-/* line 40, ../sass/_buttons.scss */
+/* line 37, ../sass/_buttons.scss */
 .mybutton .gray {
   background: -webkit-gradient(linear, 0% 0%, 0% 74%, from(#cccccc), to(#888888));
 }
 
-/* line 44, ../sass/_buttons.scss */
+/* line 41, ../sass/_buttons.scss */
 .mybutton span {
   font-size: 75%;
 }
 
-/* line 48, ../sass/_buttons.scss */
+/* line 45, ../sass/_buttons.scss */
 .mybutton:last-child {
   margin: 0;
 }
 
-/* line 52, ../sass/_buttons.scss */
+/* line 49, ../sass/_buttons.scss */
 .mybutton img {
   display: none;
   height: 22px;
   margin: -3px 7px 0 0;
 }
 
-/* line 58, ../sass/_buttons.scss */
+/* line 55, ../sass/_buttons.scss */
 .mybutton img.selected-button {
   display: inline;
 }
 
-/* line 62, ../sass/_buttons.scss */
+/* line 59, ../sass/_buttons.scss */
 .close img {
   height: 22px;
 }
 
 /* BUTTONS ON PAPER PICKER PAGE */
-/* line 69, ../sass/_buttons.scss */
+/* line 66, ../sass/_buttons.scss */
 #options .mybutton {
+  float: left;
   /* **** USE THESE FOR 5 BUTTON LAYOUT **** */
   margin: 0 1% 0 0;
   padding: 0.5% 1.25% 0 1.25%;
   width: 19%;
+  z-index: 400;
 }
 
-/* line 76, ../sass/_buttons.scss */
+/* line 75, ../sass/_buttons.scss */
 .btn_group {
   background-color: #999999;
   border-top-right-radius: 5px;
@@ -314,7 +313,7 @@ input[type="number"] {
   z-index: 300;
 }
 
-/* line 89, ../sass/_buttons.scss */
+/* line 88, ../sass/_buttons.scss */
 .btn_group span {
   color: whitesmoke;
   background-color: #999999;
@@ -782,4 +781,222 @@ input[type="number"] {
 /* line 172, ../sass/_swatches.scss */
 .willow {
   background-color: #ECF2E6;
+}
+
+/* line 2, ../sass/_upload.scss */
+.fxo-sw-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 9, ../sass/_upload.scss */
+.fxo-sw-sections {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 15, ../sass/_upload.scss */
+.fxo-sw-container section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 21, ../sass/_upload.scss */
+.fxo-sw-screen-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 27, ../sass/_upload.scss */
+.fxo-sw-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/* line 34, ../sass/_upload.scss */
+.fxo-bwiz-container .container {
+  padding-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 940px;
+}
+
+/* line 41, ../sass/_upload.scss */
+.fxo-bwiz-screen-inner {
+  margin-right: 30px;
+}
+
+/* line 45, ../sass/_upload.scss */
+.bwiz-white-box {
+  background-color: white;
+  border: 1px solid #BCBCBC;
+  min-height: 400px;
+  margin-bottom: 10px;
+}
+
+/* line 52, ../sass/_upload.scss */
+.fxo-bwiz-file-container {
+  background-color: white;
+  padding: 20px;
+}
+
+/* line 57, ../sass/_upload.scss */
+#fileupload-container {
+  background-color: #FFF;
+  border: 4px dashed #E0E0E0;
+  font-family: Arial, sans-serif;
+  margin: 0px 20px;
+  min-height: 320px;
+  padding: 30px 30px 10px 30px;
+  position: relative;
+  text-align: center;
+}
+/* line 67, ../sass/_upload.scss */
+#fileupload-container h2 {
+  font-weight: normal;
+  font-size: 1.8em;
+  vertical-align: bottom;
+}
+/* line 72, ../sass/_upload.scss */
+#fileupload-container h2 img {
+  padding: 0 0 0 15px;
+}
+
+/* line 78, ../sass/_upload.scss */
+.fxo-fileupload-content {
+  z-index: 99;
+}
+
+/* line 82, ../sass/_upload.scss */
+.fxo-fileupload-target-inner {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 88, ../sass/_upload.scss */
+.fileupload-content h3 {
+  color: black;
+  font-weight: normal;
+  font-size: 1.8em;
+}
+
+/* line 94, ../sass/_upload.scss */
+.fileupload-or-container {
+  background-color: #999999;
+  border-radius: 50%;
+  color: #FFF;
+  display: block;
+  font-size: 15px;
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
+  top: -15px;
+  width: 30px;
+}
+
+/* line 108, ../sass/_upload.scss */
+.fxo-bwiz-upload-container {
+  background-color: white;
+  margin-right: 10px;
+  border: 1px solid #999999;
+  width: 410px;
+  padding: 20px;
+  position: absolute;
+  top: 0px;
+}
+
+/* line 118, ../sass/_upload.scss */
+.fileupload-splitbox {
+  float: left;
+}
+
+/* line 122, ../sass/_upload.scss */
+.fileupload-splitbox-50 {
+  box-sizing: border-box;
+  width: 50%;
+}
+
+/* line 127, ../sass/_upload.scss */
+.fileupload-inputbox {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+}
+
+/* line 133, ../sass/_upload.scss */
+.hero-unit {
+  background-color: #e5e5e5;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  margin: 50px auto 0 auto;
+}
+
+/* line 142, ../sass/_upload.scss */
+.fxo-fileupload-selectbutton.btn {
+  height: 26px;
+  width: 164px;
+  line-height: 26px;
+}
+
+/* line 151, ../sass/_upload.scss */
+.fxo-bwiz-btnbox-left {
+  margin-right: 10px;
+}
+
+/* line 155, ../sass/_upload.scss */
+.fxo-bwiz-btnbox-right {
+  margin-left: 10px;
+}
+
+/* line 162, ../sass/_upload.scss */
+.btn.fxo-fileupload-cloudbutton {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* line 188, ../sass/_upload.scss */
+.fxo-fileupload-cloudbutton div {
+  height: 30px;
+  width: 100%;
+}
+
+/* line 193, ../sass/_upload.scss */
+.btn.fxo-fileupload-cloudbutton div.fxo-fileupload-icon-fxo {
+  background: url("../img/fileupload-icon-fxo.png") no-repeat center center;
+}
+
+/* line 197, ../sass/_upload.scss */
+.btn.fxo-fileupload-cloudbutton div.fxo-fileupload-icon-fxo {
+  background: url("../img/fileupload-icon-fxo.png") no-repeat center center;
 }

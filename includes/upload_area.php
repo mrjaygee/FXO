@@ -1,12 +1,10 @@
 <div id="print_preview">
 	<div id="fileupload-container">
-		<h2>Drag &amp; Drop your file here <img src="img/fxo_upload.png" alt="Upload" /></h2>
+		<h2>Drag &amp; Drop your file here <img src="img/fxo_upload2.png" alt="Upload" /></h2>
 		<div class="hero-unit fxo-fileupload-methodbox-narrow">
 	        <div class="fileupload-or-container text-center"> OR</div>
             <div class="fileupload-splitbox fileupload-splitbox-50">
-                    <button class="mybutton">
-                        <span>Select From Computer</span>
-                    </button>
+                    <button class="mybutton">Select From Computer</button>
                     <div class="fxo-fileupload-pdfrecommended"><small>PDFs are recommended</small></div>
             </div>
 		
