@@ -696,7 +696,7 @@ input[type="number"] {
 
 /* line 108, ../sass/_swatches.scss */
 .pastel_blue {
-  background-color: #95bfe1;
+  background-color: #8CBDDE;
 }
 
 /* line 112, ../sass/_swatches.scss */
@@ -775,11 +775,6 @@ input[type="number"] {
 }
 
 /* line 172, ../sass/_swatches.scss */
-.pastel_blue {
-  background-color: #FFEFCE;
-}
-
-/* line 176, ../sass/_swatches.scss */
 .willow {
   background-color: #ECF2E6;
 }

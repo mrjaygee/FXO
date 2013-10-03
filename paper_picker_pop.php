@@ -92,6 +92,10 @@
 			  	$('.flyouts').fadeOut('fast');
 			});
 			
+			$('#continue').click(function() {
+				$('.flyouts').fadeOut('fast');
+			});
+			
 			// TABS
 			$('li#general').click(function() {
 				flyout_selection();
@@ -158,46 +162,46 @@
 			$("#general .tile").click(function() {
 				var myClass = $(this).children().attr("class").split(/\s+/);	
 				var currentClass = $('.img_preview').attr("class").split(/\s+/);	
+				var niceString =myClass[1].replace("_", " ");
 				$('.img_preview').addClass(myClass[1]);	
 				paper_selection();
 				button_selection();
 				$(this).addClass('selected-option');
 				$(this).children().addClass('selected-option');
 				$('.mybutton img').eq(3).addClass('selected-button');	
-				$('#paper_type').text(myClass[1] + ' General Use Paper');
+				$('#paper_type').text(niceString + ' General Use Paper');
 				$('.img_preview').removeClass(currentClass[1]).addClass(myClass[1]);
-				
-				alert("The current class is " + currentClass[1] + " and the new class is " + myClass[1]);
+				//alert("The current class is " + currentClass[1] + " and the new class is " + myClass[1]);
 			});
 			
 			$("#resume .tile").click(function() {
 				var myClass = $(this).children().attr("class").split(/\s+/);	
 				var currentClass = $('.img_preview').attr("class").split(/\s+/);	
+				var niceString =myClass[1].replace("_", " ");
 				$('.img_preview').addClass(myClass[1]);	
 				paper_selection();
 				button_selection();
 				$(this).addClass('selected-option');
 				$(this).children().addClass('selected-option');
 				$('.mybutton img').eq(3).addClass('selected-button');	
-				$('#paper_type').text(myClass[1] + ' Résumé Paper');
-				$('.img_preview').removeClass(currentClass[1]).addClass(myClass[1]);
-				
-				alert("The current class is " + currentClass[1] + " and the new class is " + myClass[1]);
+				$('#paper_type').text(niceString + ' Résumé Paper');
+				$('.img_preview').removeClass(currentClass[1]).addClass(myClass[1]);				
+				//alert("The current class is " + currentClass[1] + " and the new class is " + myClass[1]);
 			});
 			
 			$("#cover .tile").click(function() {
 				var myClass = $(this).children().attr("class").split(/\s+/);	
 				var currentClass = $('.img_preview').attr("class").split(/\s+/);	
+				var niceString =myClass[1].replace("_", " ");				
 				$('.img_preview').addClass(myClass[1]);	
 				paper_selection();
 				button_selection();
 				$(this).addClass('selected-option');
 				$(this).children().addClass('selected-option');
 				$('.mybutton img').eq(3).addClass('selected-button');	
-				$('#paper_type').text(myClass[1] + ' Card & Cover Stock');
+				$('#paper_type').text(niceString + ' Card & Cover Stock');
 				$('.img_preview').removeClass(currentClass[1]).addClass(myClass[1]);
-				
-				alert("The current class is " + currentClass[1] + " and the new class is " + myClass[1]);
+				//alert("The current class is " + currentClass[1] + " and the new class is " + myClass[1]);
 			});
 						
 			// PAGE PREVIEWS
