@@ -1,3 +1,35 @@
+.fxo-sw-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.fxo-sw-sections {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fxo-sw-container section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.fxo-sw-screen-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.fxo-sw-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
 .fxo-bwiz-container .container {
     padding-top: 20px;
 }
