@@ -119,7 +119,18 @@
 				button_selection();
 			});
 			// PAGE PREVIEWS
-			$('.img_preview').attr()
+			function set_preview() {
+				$('.img_preview').attr("src", "img/resume_horiz_2pg_Page_1.png");
+			}		
+			set_preview();
+			$('#arrow_r').click(function() {	
+				$('.img_preview').attr("src", "img/resume_horiz_2pg_Page_2.png");
+				$('#current_page').val("2");
+			});
+			$('#arrow_l').click(function() {	
+				$('.img_preview').attr("src", "img/resume_horiz_2pg_Page_1.png");
+				$('#current_page').val("1");
+			});
 		 });
 	</script>
 	<script src="js/preview.js" type="text/javascript"></script>

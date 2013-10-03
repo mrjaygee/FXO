@@ -29,7 +29,7 @@
 					<div class="group">
 						<li class="complete">3 <a href="#">Black &amp; White Print <span class="edit_link">edit</span></a></li>
 						<li class="complete">&nbsp;&nbsp; <a href="#">Double-Sided Print <span class="edit_link">edit</span></a></li>
-						<li class="current">&nbsp;&nbsp; Paper Type</li>
+						<li class="current">&nbsp;&nbsp;&nbsp;<span id="paper_type">Laser (24lb) General Use Paper</span></li>
 						<li>&nbsp;&nbsp; Finishing Options</li>
 					</div>
 					<li>4 Confirm &amp; Purchase</li>
@@ -72,11 +72,11 @@
 				$.each(arr, function(index, value) {
 				       $(arr[index]).fadeOut('fast');
 				       //return (this != "three"); // will stop running after "three"
-				   });
+				});
 			};
-			
+						
 			function general_tab_selection() {
-				flyout_selection()
+				flyout_selection();
 				$('li#general').addClass('selected');
 				$('div#general').fadeIn('fast');
 			};
@@ -86,37 +86,6 @@
 		 	$("#more-options").click(function() {
 		 	  	$('#flyout_tabbed').fadeToggle('fast');
 		 	});
-			// POPULAR OPTIONS
-			$('#laser24').click(function() {
-			  	button_selection();
-			  	paper_selection();
-			  	$('#flyout_tabbed').fadeOut('fast');			  	
-			  	$('.mybutton img').eq(0).addClass('selected-button');
-			  	$('#general .tile').delay(800).eq(0).addClass('selected-option');
-			  	$('#general .tile').delay(800).eq(0).children().addClass('selected-option');
-			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
-			  	general_tab_selection();
-			});
-			$('#laser32').click(function() {
-			  	button_selection();
-			  	paper_selection();
-			  	$('#flyout_tabbed').fadeOut('fast');
-			  	$('.mybutton img').eq(1).addClass('selected-button');
-			  	$('#general .tile').delay(800).eq(1).addClass('selected-option');
-			  	$('#general .tile').delay(800).eq(1).children().addClass('selected-option');
-			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
-			  	general_tab_selection();
-			});
-			$('#recycled100').click(function() {
-			  	button_selection();
-			  	paper_selection();
-			  	$('#flyout_tabbed').fadeOut('fast');
-			  	$('.mybutton img').eq(2).addClass('selected-button');
-			  	$('#general .tile').delay(800).eq(5).addClass('selected-option');
-			  	$('#general .tile').delay(800).eq(5).children().addClass('selected-option');
-			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
-				general_tab_selection();
-			});
 
 			// FLYOUT CLOSE
 			$(".close").click(function() {
@@ -140,28 +109,109 @@
 				$('div#cover').delay( 400 ).fadeIn('fast');
 			});
 			
-			// SALMON COLOR SWATCH
-			$("#general .tile").eq(10).click(function() {
-			  	$('.img_preview').removeClass('natural').addClass('salmon');
-			  	paper_selection();
+			// POPULAR OPTIONS BUTTONS SELECTION
+			$('#laser24').click(function() {
+				var currentClass = $('.img_preview').attr("class").split(/\s+/);	
+
 			  	button_selection();
-			  	$(this).addClass('selected-option');
-			  	$(this).children().addClass('selected-option');
-				$('.mybutton img').eq(3).addClass('selected-button');
+			  	paper_selection();
+			  	general_tab_selection();
+			  	$('#flyout_tabbed').fadeOut('fast');			  	
+			  	$('.mybutton img').eq(0).addClass('selected-button');
+			  	$('#general .tile').delay(800).eq(0).addClass('selected-option');
+			  	$('#general .tile').delay(800).eq(0).children().addClass('selected-option');
+			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
+			  	$('#paper_type').text('Laser (24lb)' + ' General Use Paper');				
+				$('.img_preview').removeClass(currentClass[1]).addClass('white');
 			});
-			// NATURAL COLOR SWATCH
-			$("#resume .tile").eq(02).click(function() {
-			  $('.img_preview').removeClass('natural').addClass('natural');
-			  paper_selection();
-			  button_selection();
-			  $(this).addClass('selected-option');
-			  $(this).children().addClass('selected-option');
-			  $('.mybutton img').eq(3).addClass('selected-button');
+			
+			$('#laser32').click(function() {
+				var currentClass = $('.img_preview').attr("class").split(/\s+/);	
+
+			  	button_selection();
+			  	paper_selection();
+			  	general_tab_selection();			  	
+			  	$('#flyout_tabbed').fadeOut('fast');
+			  	$('.mybutton img').eq(1).addClass('selected-button');
+			  	$('#general .tile').delay(800).eq(1).addClass('selected-option');
+			  	$('#general .tile').delay(800).eq(1).children().addClass('selected-option');
+			  	$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
+			  	$('#paper_type').text('Laser (32lb)' + ' General Use Paper');				
+				$('.img_preview').removeClass(currentClass[1]).addClass('white');
 			});
+			
+			$('#recycled100').click(function() {
+			  	var currentClass = $('.img_preview').attr("class").split(/\s+/);	
+
+			  	button_selection();
+			  	paper_selection();
+			  	general_tab_selection();
+			  	$('#flyout_tabbed').fadeOut('fast');
+			  	$('.mybutton img').eq(2).addClass('selected-button');
+			  	$('#general .tile').delay(800).eq(5).addClass('selected-option');
+			  	$('#general .tile').delay(800).eq(5).children().addClass('selected-option');
+			  	$('#paper_type').text('100% Recycled' + ' General Use Paper');
+			  	$('.img_preview').removeClass(currentClass[1]).addClass('white');
+			});
+			
+			// SWATCH SELECTION 
+			$("#general .tile").click(function() {
+				var myClass = $(this).children().attr("class").split(/\s+/);	
+				var currentClass = $('.img_preview').attr("class").split(/\s+/);	
+				$('.img_preview').addClass(myClass[1]);	
+				paper_selection();
+				button_selection();
+				$(this).addClass('selected-option');
+				$(this).children().addClass('selected-option');
+				$('.mybutton img').eq(3).addClass('selected-button');	
+				$('#paper_type').text(myClass[1] + ' General Use Paper');
+				$('.img_preview').removeClass(currentClass[1]).addClass(myClass[1]);
+				
+				alert("The current class is " + currentClass[1] + " and the new class is " + myClass[1]);
+			});
+			
+			$("#resume .tile").click(function() {
+				var myClass = $(this).children().attr("class").split(/\s+/);	
+				var currentClass = $('.img_preview').attr("class").split(/\s+/);	
+				$('.img_preview').addClass(myClass[1]);	
+				paper_selection();
+				button_selection();
+				$(this).addClass('selected-option');
+				$(this).children().addClass('selected-option');
+				$('.mybutton img').eq(3).addClass('selected-button');	
+				$('#paper_type').text(myClass[1] + ' Résumé Paper');
+				$('.img_preview').removeClass(currentClass[1]).addClass(myClass[1]);
+				
+				alert("The current class is " + currentClass[1] + " and the new class is " + myClass[1]);
+			});
+			
+			$("#cover .tile").click(function() {
+				var myClass = $(this).children().attr("class").split(/\s+/);	
+				var currentClass = $('.img_preview').attr("class").split(/\s+/);	
+				$('.img_preview').addClass(myClass[1]);	
+				paper_selection();
+				button_selection();
+				$(this).addClass('selected-option');
+				$(this).children().addClass('selected-option');
+				$('.mybutton img').eq(3).addClass('selected-button');	
+				$('#paper_type').text(myClass[1] + ' Card & Cover Stock');
+				$('.img_preview').removeClass(currentClass[1]).addClass(myClass[1]);
+				
+				alert("The current class is " + currentClass[1] + " and the new class is " + myClass[1]);
+			});
+						
 			// PAGE PREVIEWS
+			function set_preview() {
+				$('.img_preview').attr("src", "img/resume_horiz_2pg_Page_1.png");
+			}		
+			set_preview();
 			$('#arrow_r').click(function() {	
-				alert("hello");
 				$('.img_preview').attr("src", "img/resume_horiz_2pg_Page_2.png");
+				$('#current_page').val("2");
+			});
+			$('#arrow_l').click(function() {	
+				$('.img_preview').attr("src", "img/resume_horiz_2pg_Page_1.png");
+				$('#current_page').val("1");
 			});
 		 });
 	</script>
