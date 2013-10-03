@@ -238,13 +238,9 @@ input[type="number"] {
   margin: 0 1.76% 0 0; 
   padding: 0 1.5%;
   width: 23.68%;*/
-  /* **** USE THESE FOR 5 BUTTON LAYOUT **** */
-  margin: 0 1% 0 0;
-  padding: 0.5% 1.25% 0 1.25%;
-  width: 19%;
 }
 
-/* line 28, ../sass/_buttons.scss */
+/* line 24, ../sass/_buttons.scss */
 .mybutton:hover {
   /*	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,150,221,1)), color-stop(100%,rgba(40,129,188,1)));*/
   background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#91e0fa), to(#00aae0));
@@ -252,50 +248,59 @@ input[type="number"] {
   cursor: pointer;
 }
 
-/* line 35, ../sass/_buttons.scss */
+/* line 31, ../sass/_buttons.scss */
 .mybutton.active {
   background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#ad92c9), to(#4d148c));
   border: #777;
 }
 
-/* line 40, ../sass/_buttons.scss */
+/* line 36, ../sass/_buttons.scss */
 .mybutton.active:hover {
   background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#b89cd6), to(#5a17a3));
 }
 
-/* line 44, ../sass/_buttons.scss */
+/* line 40, ../sass/_buttons.scss */
 .mybutton .gray {
   background: -webkit-gradient(linear, 0% 0%, 0% 74%, from(#cccccc), to(#888888));
 }
 
-/* line 48, ../sass/_buttons.scss */
+/* line 44, ../sass/_buttons.scss */
 .mybutton span {
   font-size: 75%;
 }
 
-/* line 52, ../sass/_buttons.scss */
+/* line 48, ../sass/_buttons.scss */
 .mybutton:last-child {
   margin: 0;
 }
 
-/* line 56, ../sass/_buttons.scss */
+/* line 52, ../sass/_buttons.scss */
 .mybutton img {
   display: none;
   height: 22px;
   margin: -3px 7px 0 0;
 }
 
-/* line 62, ../sass/_buttons.scss */
+/* line 58, ../sass/_buttons.scss */
 .mybutton img.selected-button {
   display: inline;
 }
 
-/* line 66, ../sass/_buttons.scss */
+/* line 62, ../sass/_buttons.scss */
 .close img {
   height: 22px;
 }
 
-/* line 70, ../sass/_buttons.scss */
+/* BUTTONS ON PAPER PICKER PAGE */
+/* line 69, ../sass/_buttons.scss */
+#options .mybutton {
+  /* **** USE THESE FOR 5 BUTTON LAYOUT **** */
+  margin: 0 1% 0 0;
+  padding: 0.5% 1.25% 0 1.25%;
+  width: 19%;
+}
+
+/* line 76, ../sass/_buttons.scss */
 .btn_group {
   background-color: #999999;
   border-top-right-radius: 5px;
@@ -309,7 +314,7 @@ input[type="number"] {
   z-index: 300;
 }
 
-/* line 83, ../sass/_buttons.scss */
+/* line 89, ../sass/_buttons.scss */
 .btn_group span {
   color: whitesmoke;
   background-color: #999999;

@@ -19,10 +19,6 @@ $width-five: 19%;
 	margin: 0 1.76% 0 0; 
 	padding: 0 1.5%;
 	width: 23.68%;*/
-	/* **** USE THESE FOR 5 BUTTON LAYOUT **** */
-	margin: $margin-five;
-	padding: $padding-five;
-	width: $width-five;
 }
 
 .mybutton:hover {
@@ -65,6 +61,16 @@ $width-five: 19%;
 
 .close img {
 	height: 22px;
+}
+
+
+/* BUTTONS ON PAPER PICKER PAGE */
+
+#options .mybutton {
+	/* **** USE THESE FOR 5 BUTTON LAYOUT **** */
+	margin: $margin-five;
+	padding: $padding-five;
+	width: $width-five;
 }
 
 .btn_group {

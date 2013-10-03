@@ -20,7 +20,30 @@
 	<div id="question">
 		<div class="row"><h3>What type of paper would you like to use?</h3></div>
 	</div>
-	<div class="fxo-bwiz-container fxo-sw-container" style="height: 673px;">
+	<div id="preview">
+		<div class="row">
+			<?php include('includes/upload_area.php'); ?>
+			<div id="sidebar">
+				<ul>
+					<li class="complete">1 <a href="#">File or Template <span class="edit_link">edit</span></span></a></li>
+					<div class="group">
+						<li class="current">2 Upload your file</li>
+					</div>
+					<li>3 Print Options</li>
+					<li>4 Confirm &amp; Purchase</li>
+				</ul>
+				<div id="estimate">
+					<h3>Estimated Total:<br>$0.79</h3>
+					<form method="post" action="">
+						<label for="quantity">Quantity:</label>
+						<input type="number" name="quantity" value="1" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!--<div class="fxo-bwiz-container fxo-sw-container" style="height: 673px;">
 	    <div class="fxo-sw-sections">
 		    <section class="fxo-sw-section" screen="screen" style="height: 673px; z-index: 1;">
 			    <div class="fxo-sw-screen-container">
@@ -39,7 +62,6 @@
 											                <div class="fxo-fileupload-inputbox">
 											                    <span class="btn fileinput-button fxo-fileupload-selectbutton btn-primary">
 											                        <span>Select From Computer</span>
-											                        <input class="fxo-fileupload-input" type="file" name="file">
 											                    </span>
 											                    <div class="fxo-fileupload-pdfrecommended"><small>PDFs are recommended</small></div>
 											                </div>
@@ -64,12 +86,6 @@
 											    <div class="fxo-fileupload-target fxo-opacity-0" style="z-index: 999;">
 											        <div class="fxo-fileupload-target-inner fxo-opacity-50"></div>
 											    </div>
-											    <div class="fxo-fileupload-progressbar" >
-											        <div class="progress progress-striped">
-											            <div class="bar" style="width: 0%;"></div>
-											        </div>
-											        <div class="text-center">Uploading...</div>
-							    				</div>
 											</div>
 										</div>
 				                    </div>
@@ -79,60 +95,6 @@
 				    </div>
 				</div>
 			</section>
-		</div>
-	</div>
-	<!--<div lass="fxo-bwiz-container fxo-sw-container">
-		<div class="fxo-sw-screen fxo-sw-screen-active">
-			<div class="container">
-			    <div class="fxo-bwiz-screen-inner">
-			        <div class="fxo-bwiz-white-box">
-			            <div class="fxo-bwiz-file-container">
-			                <div fxo-file-upload="" id="fxo-bwiz-file-upload" class="ng-isolate-scope ng-scope">
-			                	<div class="fxo-fileupload-container">
-									<div class="fxo-fileupload-content" style="z-index: -1;">
-										<h3>Drop your file here <img src="/img/concept1/icon-image-watermark.png"></h3>
-										<div ng-class="{'fxo-fileupload-methodbox-wide': back, 'fxo-fileupload-methodbox-narrow': !back}" class="hero-unit fxo-fileupload-methodbox-narrow">
-										    <div class="fxo-fileupload-or-container text-center">OR</div>
-										    <div ng-class="{'fxo-fileupload-splitbox-33':back, 'fxo-fileupload-splitbox-50':!back}" class="fxo-fileupload-splitbox fxo-fileupload-splitbox-50">
-										        <div class="fxo-fileupload-inputbox">
-										            <span ng-class="{'btn-primary': !back}" class="btn fileinput-button fxo-fileupload-selectbutton btn-primary">
-										                <span>Select From Computer</span>
-										                <input class="fxo-fileupload-input" type="file" name="file">
-										            </span>
-										
-										            <div class="fxo-fileupload-pdfrecommended"><small>PDFs are recommended</small></div>
-										        </div>
-										    </div>
-										    <div ng-class="{'fxo-fileupload-splitbox-33':back, 'fxo-fileupload-splitbox-50':!back}" ng-show="back" class="fxo-fileupload-splitbox fxo-fileupload-splitbox-50" >
-										        <button ng-click="sameAsFront()" class="btn btn-primary fxo-fileupload-same-frontbutton">Same as Front</button>
-										    </div>
-										    <div ng-class="{'fxo-fileupload-splitbox-33':back, 'fxo-fileupload-splitbox-50':!back}" class="fxo-fileupload-splitbox fxo-fileupload-splitbox-50">
-										        <div class="fxo-fileupload-inputbox">
-										            <button class="btn fxo-fileupload-cloudbutton"><div class="fxo-fileupload-icon-fxo"></div></button>
-										            <button class="btn fxo-fileupload-cloudbutton"><div class="fxo-fileupload-icon-box"></div></button>
-										            <button class="btn fxo-fileupload-cloudbutton"><div class="fxo-fileupload-icon-dropbox"></div></button>
-										            <button class="btn fxo-fileupload-cloudbutton"><div class="fxo-fileupload-icon-googledrive"></div></button>
-										        </div>
-										        <div class="fxo-fileupload-cloudtransfer"><small><strong>Transfer from Cloud Service</strong></small></div>
-										    </div>
-										    <div class="clearfix"></div>
-										</div>
-									</div>
-									<div class="fxo-fileupload-target fxo-opacity-0" style="z-index: 999;">
-										<div class="fxo-fileupload-target-inner fxo-opacity-50"></div>
-									</div>	
-									<div class="fxo-fileupload-progressbar" >
-										<div class="progress progress-striped">
-			    							<div class="bar" style="width: 0%;"></div>
-										</div>
-										<div class="text-center">Uploading...</div>
-									</div>
-								</div>
-							</div>
-			            </div>
-			        </div>
-			 	</div>
-			 </div>
 		</div>
 	</div>-->
 	<?php include('includes/buttons_popular.php'); ?>
