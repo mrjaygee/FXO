@@ -1,59 +1,3 @@
-
-			.fxo-sw-container {
-			    width: 100%;
-			    height: 100%;
-			    overflow: hidden;
-			    position: relative;
-			}
-			
-			.fxo-sw-sections {
-			    width: 100%;
-			    height: 100%;
-			    overflow: hidden;
-			}
-			
-			.fxo-sw-container section {
-			    width: 100%;
-			    height: 100%;
-			    position: absolute;
-			}
-			
-			.fxo-sw-screen-container {
-			    position: relative;
-			    width: 100%;
-			    height: 100%;
-			}
-			
-			.fxo-sw-screen {
-			    position: absolute;
-			    width: 100%;
-			    height: 100%;
-			    overflow: auto;
-			}
-			
-			.fxo-bwiz-container .container {
-			    padding-top: 20px;
-			    margin-right: auto;
-			    margin-left: auto;
-			    width: 940px;
-			}
-			
-			.fxo-bwiz-screen-inner {
-			margin-right: 30px;
-			}
-			
-			.bwiz-white-box {
-				background-color: white;
-				border: 1px solid #BCBCBC;
-				min-height: 400px;
-				margin-bottom: 10px;
-			}
-			
-			.fxo-bwiz-file-container {
-				background-color: white;
-				padding: 20px;
-			}
-
 #fileupload-container {
 	background-color: #FFF;
 	border: 4px dashed #E0E0E0;
@@ -128,6 +72,25 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 280px;
+	
+	ul {
+		font-size: 50%;
+		margin: 10px 0 0 40px;
+		width: 200px;
+	}
+	
+	ul li {
+		box-sizing: border-box;
+		display: inline-table;
+		line-height: 1.2em;
+		margin-right: 10px;
+		padding: 0 5px;
+		width: 16px;
+		
+		&:last-child {
+			margin-right: 0; 
+		}
+	}
 }
 			
 .hero-unit {
@@ -137,64 +100,104 @@
 	font-weight: 200;
 	line-height: 30px;
 	margin: 50px auto 0 auto;	
-}
-			
-			.fxo-fileupload-selectbutton.btn {
-			height: 26px;
-			width: 164px;
-			line-height: 26px;
-			}
-			
-
-
-			
-			.fxo-bwiz-btnbox-left {
-			    margin-right: 10px;
-			}
-			
-			.fxo-bwiz-btnbox-right {
-			    margin-left: 10px;
-			}
-.btn {
-
+	position: relative;
 }
 
-.btn.fxo-fileupload-cloudbutton {
-display: inline-block;
-padding: 4px 12px;
-margin-bottom: 0;
-font-size: 14px;
-line-height: 20px;
-color: #333333;
-text-align: center;
-text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-vertical-align: middle;
-cursor: pointer;
-background-color: #f5f5f5;
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
-background-repeat: repeat-x;
-border: 1px solid #cccccc;
-border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-border-bottom-color: #b3b3b3;
--webkit-border-radius: 4px;
-border-radius: 4px;
--webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+.tooltip {
+	background-color: #FFF;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	display: none;
+	font-size: 60%;
+	position: absolute;
+		top: -6px;
+		right: 184px;
+	width: 100px;
+	
+	&:after, &:before {
+		top: 100%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	
+	&:after {
+		border-color: rgba(136, 183, 213, 0);
+		border-top-color: #FFF;
+		border-width: 10px;
+		left: 50%;
+		margin-left: -10px;
+	}
+	
+	&:before {
+		border-color: rgba(194, 225, 245, 0);
+		/*border-top-color: #02B3F0;*/
+		border-top-color: #999;
+		border-width: 11px;
+		left: 50%;
+		margin-left: -11px;
+	}	
+}
+
+#box { right: 132px; }
+#dropbox { right: 80px; }
+#googledrive { right: 27px; }
+			
+.btn.fileupload-cloudbutton {
+	background-color: #f5f5f5;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #cccccc;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	color: #333333;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 0;
+	line-height: 20px;
+	padding: 4px 10px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
 }			
 
-.fxo-fileupload-cloudbutton div {
+.fileupload-cloudbutton div {
 	height: 30px;
-	width: 100%;
+	width: 21px;
 }
 
-.btn.fxo-fileupload-cloudbutton div.fxo-fileupload-icon-fxo {
+div.fileupload-icon-fxo {
 	background: url('../img/fileupload-icon-fxo.png') no-repeat center center;
+
+	&:hover { background: url('../img/fileupload-icon-fxo-color.png') no-repeat center center; }
 }
 
-.btn.fxo-fileupload-cloudbutton div.fxo-fileupload-icon-fxo {
-	background: url('../img/fileupload-icon-fxo.png') no-repeat center center;
+div.fileupload-icon-box {
+	background: url('../img/fileupload-icon-box.png') no-repeat center center;
+
+	&:hover { background: url('../img/fileupload-icon-box-color.png') no-repeat center center; }
 }
+
+div.fileupload-icon-dropbox {
+	background: url('../img/fileupload-icon-dropbox.png') no-repeat center center;
+
+	&:hover { background: url('../img/fileupload-icon-dropbox-color.png') no-repeat center center; }
+}
+
+div.fileupload-icon-googledrive {
+	background: url('../img/fileupload-icon-googledrive.png') no-repeat center center;
+
+	&:hover { background: url('../img/fileupload-icon-googledrive-color.png') no-repeat center center; }
+}
+
 
