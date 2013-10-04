@@ -19,8 +19,9 @@
 .img_preview {
 	border: 1px solid #333;
 	box-shadow: 0px 3px 3px rgba(#000, 0.25);
-	/*width: 468px;*/
+	position: relative;
 	width: 515px;
+	z-index: 200;
 }
 
 .preview-control-container {

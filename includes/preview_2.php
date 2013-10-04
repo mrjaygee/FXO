@@ -11,4 +11,7 @@
 		<span id="page_indicator"></span>
 	</div>
 	<img src="" alt="" class="img_preview white" />
+	<div id="hole_punch_simulator">
+		<img src="" alt="" />
+	</div>
 </div>

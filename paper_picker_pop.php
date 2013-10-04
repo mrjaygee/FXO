@@ -71,7 +71,6 @@
 				var arr = [ "div#general", "div#resume", "div#cover" ];
 				$.each(arr, function(index, value) {
 				       $(arr[index]).fadeOut('fast');
-				       //return (this != "three"); // will stop running after "three"
 				});
 			};
 						

@@ -2,6 +2,11 @@
 
 #tiles {
 	box-sizing: border-box;
+	padding: 18px;
+	width: 100%;
+}
+
+#flyout_tabbed #tiles {
 	-webkit-column-count: 3; /* Safari and Chrome */
 	column-count: 3;
 	-webkit-column-gap: 18px; /* Safari and Chrome */
@@ -9,11 +14,6 @@
 	column-fill: auto;
 	-webkit-column-fill: auto;
 	float: left;
-	padding: 18px;
-	width: 100%;
-}
-
-#flyout_tabbed #tiles {
 	width: 675px;
 }
 

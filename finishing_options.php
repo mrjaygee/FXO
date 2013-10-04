@@ -30,7 +30,7 @@
 						<li class="complete">3 <a href="#">Black &amp; White Print <span class="edit_link">edit</span></a></li>
 						<li class="complete">&nbsp;&nbsp; <a href="#">Double-Sided Print <span class="edit_link">edit</span></a></li>
 						<li class="complete">&nbsp;&nbsp; <a href="#">Laser (32lb) General Use Paper <span class="edit_link">edit</span></a></li>
-						<li class="current">&nbsp;&nbsp; Finishing Options</li>
+						<li class="current">&nbsp;&nbsp; <span id="finishing_options">Finishing Options</span></li>
 					</div>
 					<li>4 Confirm &amp; Purchase</li>
 				</ul>
@@ -56,11 +56,13 @@
 				   $(this).removeClass('selected-button');
 				});
 			};
-			function paper_selection() {		 
+			
+			function option_selection() {		 
 				$(".tile").each(function(i){
 				   $(this).removeClass('selected-option');
 				});
 			};	 	
+			
 			function flyout_selection() {
 				$('.flyouts').fadeOut('fast');
 			}
@@ -86,37 +88,52 @@
 			  	$('.flyouts').fadeOut('fast');
 			});
 			
-			// SALMON COLOR SWATCH
-			$("#flyout_general .tile").eq(10).click(function() {
-			  	$('.img_preview').removeClass('natural').addClass('salmon');
-			  	paper_selection();
-			  	button_selection();
-			  	$(this).addClass('selected-option');
-			    $(this).children().addClass('selected-option');			  	
-				$('.mybutton img').eq(0).addClass('selected-button');
+			
+			// HOLE PUNCH OPTIONS
+			function set_punch() {
+				$('#hole_punch_simulator img').attr("src", "img/hole-punch-no-hole.png");
+			}		
+			set_punch();
+			
+			$('#flyout_hole_punching .tile').eq(0).hover(function() {	
+				$('#hole_punch_simulator img').attr("src", "img/hole-punch-no-hole.png");
+				option_selection();
 			});
-			// NATURAL COLOR SWATCH
-			$("#flyout_resume .tile").eq(02).click(function() {
-			  $('.img_preview').removeClass('natural').addClass('natural');
-			  	paper_selection();
+
+			$('#flyout_hole_punching .tile').eq(0).click(function() {	
+				$('#hole_punch_simulator img').attr("src", "img/hole-punch-no-hole.png");
+			  	$('.flyouts').fadeOut('fast');
 			  	button_selection();
-			  	$(this).addClass('selected-option');
-				$(this).children().addClass('selected-option');			  
-			  	$('.mybutton img').eq(1).addClass('selected-button');
+			  	$('.mybutton img').eq(2).addClass('selected-button');
+			  	$('span#finishing_options').text('No Hole Punch');
 			});
-			// WHITE COLOR SWATCH
-			function back_to_white() {
-				$('.img_preview').removeClass('natural').removeClass('salmon').addClass('white');
-				$(this).addClass('selected-option');
-				$(this).children().addClass('selected-option');			  	
-				$('.mybutton img').eq(0).addClass('selected-button');
-			};
-						
-			$("#flyout_general .tile").eq(0).click(function() {
-				back_to_white();
-				paper_selection();
+
+			$('#flyout_hole_punching .tile').eq(1).hover(function() {	
+				$('#hole_punch_simulator img').attr("src", "img/hole-punch-02-hole.png");
+				option_selection();
+			});
+
+			$('#flyout_hole_punching .tile').eq(1).click(function() {	
+				$('#hole_punch_simulator img').attr("src", "img/hole-punch-02-hole.png");
+				$('.flyouts').fadeOut('fast');
 				button_selection();
+			  	$('.mybutton img').eq(2).addClass('selected-button');
+			  	$('span#finishing_options').text('2-Hole Punch');
 			});
+			
+			$('#flyout_hole_punching .tile').eq(2).hover(function() {	
+				$('#hole_punch_simulator img').attr("src", "img/hole-punch-03-hole.png");
+				option_selection();
+			});
+
+			$('#flyout_hole_punching .tile').eq(2).click(function() {	
+				$('#hole_punch_simulator img').attr("src", "img/hole-punch-03-hole.png");
+				$('.flyouts').fadeOut('fast');
+				button_selection();
+			  	$('.mybutton img').eq(2).addClass('selected-button');
+			  	$('span#finishing_options').text('3-Hole Punch');
+			});
+						
 			// PAGE PREVIEWS
 			function set_preview() {
 				$('.img_preview').attr("src", "img/resume_horiz_2pg_Page_1.png");
@@ -132,6 +149,5 @@
 			});
 		 });
 	</script>
-	<script src="js/preview.js" type="text/javascript"></script>
 </body>
 </html>

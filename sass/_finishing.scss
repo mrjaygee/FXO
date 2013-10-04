@@ -3,19 +3,12 @@
    ********************************************** */
    
 #flyout_stapling, #flyout_binding, #flyout_hole_punching {
-	.flyouts:after { left: 62%; }
-	.flyouts:before { left: 62%; }   
+	
+	&.flyouts { bottom: 70px; }
+	&.flyouts:after { left: 62%; }
+	&.flyouts:before { left: 62%; }   
    
    	#tiles {
-   		box-sizing: border-box;
-   		-webkit-column-count: 0; /* Safari and Chrome */
-   		column-count: 0;
-   		-webkit-column-gap: none; /* Safari and Chrome */
-   		column-gap: auto;
-   		column-fill: auto;
-   		-webkit-column-fill: auto;
-   		
-   		padding: 18px;
    		
    		.tile {
    			background-color: rgba($lt-gray2, 0.75);
@@ -24,11 +17,13 @@
    			float: left;
    			height: 200px;
    			line-height: 2em;
-   			margin: 0 0 6px 0;
+   			margin: 0 2% 2% 0;
    			padding: 12px 0;
    			text-align: center;
-   			width: 33%;
+   			width: 32%;
    			
+   				&:last-child { margin-right: 0; }
+				   				
    				&:hover {
    					background-color: $fxo-blue1;
    					color: #FFF;
@@ -40,8 +35,21 @@
    					color: #FFF;
    					cursor: pointer;
    				}
+   				
+   				img { 
+   					background-color: #FFF;
+   					border: 2px solid #999;
+   					width: 200px; 
+   				}
    		}
    	}
 } 
-   
-#flyout_hole_punching .flyouts { bottom: 70px; }
+
+#hole_punch_simulator {
+	height: 364px;
+	position: absolute;
+		top: 26px;
+		left: 111px;	
+	width: 515px;
+	z-index: 300;
+}

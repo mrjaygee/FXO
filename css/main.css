@@ -506,11 +506,12 @@ input[type="number"] {
 .img_preview {
   border: 1px solid #333;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
-  /*width: 468px;*/
+  position: relative;
   width: 515px;
+  z-index: 200;
 }
 
-/* line 26, ../sass/_preview.scss */
+/* line 27, ../sass/_preview.scss */
 .preview-control-container {
   color: black;
   font-size: 13px;
@@ -522,7 +523,7 @@ input[type="number"] {
   width: 90%;
 }
 
-/* line 37, ../sass/_preview.scss */
+/* line 38, ../sass/_preview.scss */
 #page_number {
   color: #666;
   /*	position: absolute;
@@ -531,29 +532,29 @@ input[type="number"] {
   */
 }
 
-/* line 44, ../sass/_preview.scss */
+/* line 45, ../sass/_preview.scss */
 #page_number input {
   border-radius: 3px;
   width: 15px;
 }
 
-/* line 49, ../sass/_preview.scss */
+/* line 50, ../sass/_preview.scss */
 #arrow_l, #arrow_r {
   height: 30px;
   position: absolute;
   bottom: 200px;
   width: 25px;
 }
-/* line 55, ../sass/_preview.scss */
+/* line 56, ../sass/_preview.scss */
 #arrow_l:hover, #arrow_r:hover {
   cursor: pointer;
 }
 
-/* line 58, ../sass/_preview.scss */
+/* line 59, ../sass/_preview.scss */
 #arrow_l {
   left: 0px;
 }
-/* line 61, ../sass/_preview.scss */
+/* line 62, ../sass/_preview.scss */
 #arrow_l:after {
   right: 25%;
   border: solid transparent;
@@ -567,7 +568,7 @@ input[type="number"] {
   border-width: 10px;
   margin-top: 5px;
 }
-/* line 76, ../sass/_preview.scss */
+/* line 77, ../sass/_preview.scss */
 #arrow_l:before {
   right: 25%;
   border: solid transparent;
@@ -582,11 +583,11 @@ input[type="number"] {
   margin-top: 0px;
 }
 
-/* line 92, ../sass/_preview.scss */
+/* line 93, ../sass/_preview.scss */
 #arrow_r {
   right: 0px;
 }
-/* line 95, ../sass/_preview.scss */
+/* line 96, ../sass/_preview.scss */
 #arrow_r:after {
   left: 25%;
   border: solid transparent;
@@ -600,7 +601,7 @@ input[type="number"] {
   border-width: 10px;
   margin-top: 5px;
 }
-/* line 110, ../sass/_preview.scss */
+/* line 111, ../sass/_preview.scss */
 #arrow_r:before {
   left: 25%;
   border: solid transparent;
@@ -619,6 +620,12 @@ input[type="number"] {
 /* line 3, ../sass/_swatches.scss */
 #tiles {
   box-sizing: border-box;
+  padding: 18px;
+  width: 100%;
+}
+
+/* line 9, ../sass/_swatches.scss */
+#flyout_tabbed #tiles {
   -webkit-column-count: 3;
   /* Safari and Chrome */
   column-count: 3;
@@ -628,12 +635,6 @@ input[type="number"] {
   column-fill: auto;
   -webkit-column-fill: auto;
   float: left;
-  padding: 18px;
-  width: 100%;
-}
-
-/* line 16, ../sass/_swatches.scss */
-#flyout_tabbed #tiles {
   width: 675px;
 }
 
@@ -1029,28 +1030,19 @@ div.fileupload-icon-googledrive:hover {
 /* **********************************************
    FINISHING OPTIONS FLYOUT
    ********************************************** */
-/* line 6, ../sass/_finishing.scss */
-#flyout_stapling .flyouts:after, #flyout_binding .flyouts:after, #flyout_hole_punching .flyouts:after {
-  left: 62%;
-}
 /* line 7, ../sass/_finishing.scss */
-#flyout_stapling .flyouts:before, #flyout_binding .flyouts:before, #flyout_hole_punching .flyouts:before {
+#flyout_stapling.flyouts, #flyout_binding.flyouts, #flyout_hole_punching.flyouts {
+  bottom: 70px;
+}
+/* line 8, ../sass/_finishing.scss */
+#flyout_stapling.flyouts:after, #flyout_binding.flyouts:after, #flyout_hole_punching.flyouts:after {
   left: 62%;
 }
 /* line 9, ../sass/_finishing.scss */
-#flyout_stapling #tiles, #flyout_binding #tiles, #flyout_hole_punching #tiles {
-  box-sizing: border-box;
-  -webkit-column-count: 0;
-  /* Safari and Chrome */
-  column-count: 0;
-  -webkit-column-gap: none;
-  /* Safari and Chrome */
-  column-gap: auto;
-  column-fill: auto;
-  -webkit-column-fill: auto;
-  padding: 18px;
+#flyout_stapling.flyouts:before, #flyout_binding.flyouts:before, #flyout_hole_punching.flyouts:before {
+  left: 62%;
 }
-/* line 20, ../sass/_finishing.scss */
+/* line 13, ../sass/_finishing.scss */
 #flyout_stapling #tiles .tile, #flyout_binding #tiles .tile, #flyout_hole_punching #tiles .tile {
   background-color: rgba(245, 245, 245, 0.75);
   border-radius: 3px;
@@ -1058,25 +1050,40 @@ div.fileupload-icon-googledrive:hover {
   float: left;
   height: 200px;
   line-height: 2em;
-  margin: 0 0 6px 0;
+  margin: 0 2% 2% 0;
   padding: 12px 0;
   text-align: center;
-  width: 33%;
+  width: 32%;
 }
-/* line 32, ../sass/_finishing.scss */
+/* line 25, ../sass/_finishing.scss */
+#flyout_stapling #tiles .tile:last-child, #flyout_binding #tiles .tile:last-child, #flyout_hole_punching #tiles .tile:last-child {
+  margin-right: 0;
+}
+/* line 27, ../sass/_finishing.scss */
 #flyout_stapling #tiles .tile:hover, #flyout_binding #tiles .tile:hover, #flyout_hole_punching #tiles .tile:hover {
   background-color: #00a0d3;
   color: #FFF;
   cursor: pointer;
 }
-/* line 38, ../sass/_finishing.scss */
+/* line 33, ../sass/_finishing.scss */
 #flyout_stapling #tiles .tile.selected-option, #flyout_binding #tiles .tile.selected-option, #flyout_hole_punching #tiles .tile.selected-option {
   background-color: #00a0d3;
   color: #FFF;
   cursor: pointer;
 }
+/* line 39, ../sass/_finishing.scss */
+#flyout_stapling #tiles .tile img, #flyout_binding #tiles .tile img, #flyout_hole_punching #tiles .tile img {
+  background-color: #FFF;
+  border: 2px solid #999;
+  width: 200px;
+}
 
-/* line 47, ../sass/_finishing.scss */
-#flyout_hole_punching .flyouts {
-  bottom: 70px;
+/* line 48, ../sass/_finishing.scss */
+#hole_punch_simulator {
+  height: 364px;
+  position: absolute;
+  top: 26px;
+  left: 111px;
+  width: 515px;
+  z-index: 300;
 }
