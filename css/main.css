@@ -288,8 +288,15 @@ input[type="number"] {
   height: 22px;
 }
 
+/* BUTTON ON UPLOAD PAGE */
+/* line 65, ../sass/_buttons.scss */
+.hero-unit .mybutton {
+  height: 50px;
+  font-size: 90%;
+}
+
 /* BUTTONS ON PAPER PICKER PAGE */
-/* line 66, ../sass/_buttons.scss */
+/* line 72, ../sass/_buttons.scss */
 #options .mybutton {
   float: left;
   /* **** USE THESE FOR 5 BUTTON LAYOUT **** */
@@ -299,7 +306,7 @@ input[type="number"] {
   z-index: 400;
 }
 
-/* line 75, ../sass/_buttons.scss */
+/* line 81, ../sass/_buttons.scss */
 .btn_group {
   background-color: #999999;
   border-top-right-radius: 5px;
@@ -313,7 +320,7 @@ input[type="number"] {
   z-index: 300;
 }
 
-/* line 88, ../sass/_buttons.scss */
+/* line 94, ../sass/_buttons.scss */
 .btn_group span {
   color: whitesmoke;
   background-color: #999999;
@@ -805,26 +812,7 @@ input[type="number"] {
   padding: 0 0 0 15px;
 }
 
-/* line 22, ../sass/_upload.scss */
-.fxo-fileupload-content {
-  z-index: 99;
-}
-
-/* line 26, ../sass/_upload.scss */
-.fxo-fileupload-target-inner {
-  background-color: white;
-  height: 100%;
-  width: 100%;
-}
-
-/* line 32, ../sass/_upload.scss */
-.fileupload-content h3 {
-  color: black;
-  font-weight: normal;
-  font-size: 1.8em;
-}
-
-/* line 38, ../sass/_upload.scss */
+/* line 23, ../sass/_upload.scss */
 .fileupload-or-container {
   background-color: #999999;
   border-radius: 50%;
@@ -838,7 +826,7 @@ input[type="number"] {
   width: 30px;
 }
 
-/* line 52, ../sass/_upload.scss */
+/* line 37, ../sass/_upload.scss */
 .fxo-bwiz-upload-container {
   background-color: white;
   margin-right: 10px;
@@ -849,30 +837,30 @@ input[type="number"] {
   top: 0px;
 }
 
-/* line 62, ../sass/_upload.scss */
+/* line 47, ../sass/_upload.scss */
 .fileupload-splitbox {
   float: left;
 }
 
-/* line 66, ../sass/_upload.scss */
+/* line 51, ../sass/_upload.scss */
 .fileupload-splitbox-50 {
   box-sizing: border-box;
   width: 50%;
 }
 
-/* line 71, ../sass/_upload.scss */
+/* line 56, ../sass/_upload.scss */
 .fileupload-inputbox {
   margin-left: auto;
   margin-right: auto;
   width: 280px;
 }
-/* line 76, ../sass/_upload.scss */
+/* line 61, ../sass/_upload.scss */
 .fileupload-inputbox ul {
   font-size: 50%;
   margin: 10px 0 0 40px;
   width: 200px;
 }
-/* line 82, ../sass/_upload.scss */
+/* line 67, ../sass/_upload.scss */
 .fileupload-inputbox ul li {
   box-sizing: border-box;
   display: inline-table;
@@ -881,12 +869,12 @@ input[type="number"] {
   padding: 0 5px;
   width: 16px;
 }
-/* line 90, ../sass/_upload.scss */
+/* line 75, ../sass/_upload.scss */
 .fileupload-inputbox ul li:last-child {
   margin-right: 0;
 }
 
-/* line 96, ../sass/_upload.scss */
+/* line 81, ../sass/_upload.scss */
 .hero-unit {
   background-color: #e5e5e5;
   border-radius: 6px;
@@ -897,7 +885,7 @@ input[type="number"] {
   position: relative;
 }
 
-/* line 106, ../sass/_upload.scss */
+/* line 91, ../sass/_upload.scss */
 .tooltip {
   background-color: #FFF;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -905,10 +893,10 @@ input[type="number"] {
   font-size: 60%;
   position: absolute;
   top: -6px;
-  right: 184px;
+  right: 199px;
   width: 100px;
 }
-/* line 116, ../sass/_upload.scss */
+/* line 101, ../sass/_upload.scss */
 .tooltip:after, .tooltip:before {
   top: 100%;
   border: solid transparent;
@@ -918,7 +906,7 @@ input[type="number"] {
   position: absolute;
   pointer-events: none;
 }
-/* line 126, ../sass/_upload.scss */
+/* line 111, ../sass/_upload.scss */
 .tooltip:after {
   border-color: rgba(136, 183, 213, 0);
   border-top-color: #FFF;
@@ -926,7 +914,7 @@ input[type="number"] {
   left: 50%;
   margin-left: -10px;
 }
-/* line 134, ../sass/_upload.scss */
+/* line 119, ../sass/_upload.scss */
 .tooltip:before {
   border-color: rgba(194, 225, 245, 0);
   /*border-top-color: #02B3F0;*/
@@ -936,22 +924,22 @@ input[type="number"] {
   margin-left: -11px;
 }
 
-/* line 144, ../sass/_upload.scss */
+/* line 129, ../sass/_upload.scss */
 #box {
-  right: 132px;
+  right: 137px;
 }
 
-/* line 145, ../sass/_upload.scss */
+/* line 130, ../sass/_upload.scss */
 #dropbox {
-  right: 80px;
+  right: 74px;
 }
 
-/* line 146, ../sass/_upload.scss */
+/* line 131, ../sass/_upload.scss */
 #googledrive {
-  right: 27px;
+  right: 13px;
 }
 
-/* line 148, ../sass/_upload.scss */
+/* line 133, ../sass/_upload.scss */
 .btn.fileupload-cloudbutton {
   background-color: #f5f5f5;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
@@ -971,51 +959,50 @@ input[type="number"] {
   display: inline-block;
   font-size: 14px;
   margin-bottom: 0;
-  line-height: 20px;
-  padding: 4px 10px;
+  padding: 9px 15px;
   text-align: center;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
 }
 
-/* line 174, ../sass/_upload.scss */
+/* line 158, ../sass/_upload.scss */
 .fileupload-cloudbutton div {
   height: 30px;
   width: 21px;
 }
 
-/* line 179, ../sass/_upload.scss */
+/* line 163, ../sass/_upload.scss */
 div.fileupload-icon-fxo {
   background: url("../img/fileupload-icon-fxo.png") no-repeat center center;
 }
-/* line 182, ../sass/_upload.scss */
+/* line 166, ../sass/_upload.scss */
 div.fileupload-icon-fxo:hover {
   background: url("../img/fileupload-icon-fxo-color.png") no-repeat center center;
 }
 
-/* line 185, ../sass/_upload.scss */
+/* line 169, ../sass/_upload.scss */
 div.fileupload-icon-box {
   background: url("../img/fileupload-icon-box.png") no-repeat center center;
 }
-/* line 188, ../sass/_upload.scss */
+/* line 172, ../sass/_upload.scss */
 div.fileupload-icon-box:hover {
   background: url("../img/fileupload-icon-box-color.png") no-repeat center center;
 }
 
-/* line 191, ../sass/_upload.scss */
+/* line 175, ../sass/_upload.scss */
 div.fileupload-icon-dropbox {
   background: url("../img/fileupload-icon-dropbox.png") no-repeat center center;
 }
-/* line 194, ../sass/_upload.scss */
+/* line 178, ../sass/_upload.scss */
 div.fileupload-icon-dropbox:hover {
   background: url("../img/fileupload-icon-dropbox-color.png") no-repeat center center;
 }
 
-/* line 197, ../sass/_upload.scss */
+/* line 181, ../sass/_upload.scss */
 div.fileupload-icon-googledrive {
   background: url("../img/fileupload-icon-googledrive.png") no-repeat center center;
 }
-/* line 200, ../sass/_upload.scss */
+/* line 184, ../sass/_upload.scss */
 div.fileupload-icon-googledrive:hover {
   background: url("../img/fileupload-icon-googledrive-color.png") no-repeat center center;
 }

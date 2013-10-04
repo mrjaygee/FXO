@@ -32,26 +32,21 @@
 					<li>3 Print Options</li>
 					<li>4 Confirm &amp; Purchase</li>
 				</ul>
-				<div id="estimate">
-					<h3>Estimated Total:<br>$0.79</h3>
-					<form method="post" action="">
-						<label for="quantity">Quantity:</label>
-						<input type="number" name="quantity" value="1" />
-					</form>
-				</div>
 			</div>
 		</div>
 		<div class="clearfix"></div>
 	</div>
-	<?php include('includes/buttons_popular.php'); ?>
   	<script src="js/jquery-1.10.2.min.js"></script>
   	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
 	<script>
 		 $( document ).ready(function() {
-		 	// FUNCTIONS
-			$(".fileupload-icon-fxo").hover(function() {
-				$("#fxo").fadeIn('fast');
-			});			
+		 	// FUNCTIONS			
+			$(".fileupload-cloudbutton").hover(function() {
+				var myIndex = $(this).index();
+				//alert(myIndex);
+				$(".tooltip").eq(myIndex).fadeToggle('fast');
+			});					
+				
 		 });
 	</script>
 </body>

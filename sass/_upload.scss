@@ -19,21 +19,6 @@
 	}
 }
 			
-			.fxo-fileupload-content {
-				z-index: 99;
-			}
-			
-			.fxo-fileupload-target-inner {
-			background-color: white;
-			height: 100%;
-			width: 100%;
-			}
-			
-			.fileupload-content h3 {
-			color: black;
-			font-weight: normal;
-			font-size: 1.8em;
-			}
 			
 .fileupload-or-container {
 	background-color: $med-gray2;
@@ -110,7 +95,7 @@
 	font-size: 60%;
 	position: absolute;
 		top: -6px;
-		right: 184px;
+		right: 199px;
 	width: 100px;
 	
 	&:after, &:before {
@@ -141,9 +126,9 @@
 	}	
 }
 
-#box { right: 132px; }
-#dropbox { right: 80px; }
-#googledrive { right: 27px; }
+#box { right: 137px; }
+#dropbox { right: 74px; }
+#googledrive { right: 13px; }
 			
 .btn.fileupload-cloudbutton {
 	background-color: #f5f5f5;
@@ -164,8 +149,7 @@
 	display: inline-block;
 	font-size: 14px;
 	margin-bottom: 0;
-	line-height: 20px;
-	padding: 4px 10px;
+	padding: 9px 15px;
 	text-align: center;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 	vertical-align: middle;
