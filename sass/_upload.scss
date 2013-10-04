@@ -18,7 +18,16 @@
 		}
 	}
 }
-			
+	
+.hero-unit {
+	background-color: $lt-gray1;
+	border-radius: 6px;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 50px;
+	margin: 50px auto 0 auto;	
+	position: relative;
+}			
 			
 .fileupload-or-container {
 	background-color: $med-gray2;
@@ -27,22 +36,12 @@
 	display: block;
 	font-size: 15px;
 	height: 30px;
+	line-height: 30px;
 	margin: 0 auto;
 	position: relative;
 		top: -15px;
 	width: 30px;
 }
-			
-			
-			.fxo-bwiz-upload-container {
-			    background-color: white;
-			    margin-right: 10px;
-			    border: 1px solid #999999;
-			    width: 410px;
-			    padding: 20px;
-			    position: absolute;
-			    top: 0px;
-			}
 			
 .fileupload-splitbox {
 	float: left;
@@ -77,22 +76,17 @@
 		}
 	}
 }
-			
-.hero-unit {
-	background-color: $lt-gray1;
-	border-radius: 6px;
-	font-size: 18px;
-	font-weight: 200;
-	line-height: 30px;
-	margin: 50px auto 0 auto;	
-	position: relative;
-}
+
+.fileupload-cloudtransfer {
+	font-weight: bold;
+}			
 
 .tooltip {
 	background-color: #FFF;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 	display: none;
 	font-size: 60%;
+	line-height: 30px;
 	position: absolute;
 		top: -6px;
 		right: 199px;
@@ -183,5 +177,3 @@ div.fileupload-icon-googledrive {
 
 	&:hover { background: url('../img/fileupload-icon-googledrive-color.png') no-repeat center center; }
 }
-
-
