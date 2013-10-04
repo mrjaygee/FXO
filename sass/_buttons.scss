@@ -1,3 +1,7 @@
+$margin-four: 0 1% 0 0;
+$padding-four: 0.5% 1.25% 0 1.25%;
+$width-four: 23.5%;
+
 $margin-five: 0 1% 0 0;
 $padding-five: 0.5% 1.25% 0 1.25%;
 $width-five: 19%;
@@ -69,7 +73,7 @@ $width-five: 19%;
 
 /* BUTTONS ON PAPER PICKER PAGE */
 
-#options .mybutton {
+.popular .mybutton {
 	float: left;
 	/* **** USE THESE FOR 5 BUTTON LAYOUT **** */
 	margin: $margin-five;
@@ -104,4 +108,12 @@ $width-five: 19%;
 	text-align: center;
 	width: 186px;
 	@include inverted-shadow;
+}
+
+/* BUTTONS ON FINISHING OPTIONS PAGE */
+
+.finishing_options .mybutton {
+	margin: $margin-four;
+	padding: $padding-four;
+	width: $width-four;
 }

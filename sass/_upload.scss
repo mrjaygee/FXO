@@ -1,10 +1,21 @@
-#fileupload-container {
+#main_container {
 	background-color: #FFF;
+	border: 1px solid #BBB;
+	box-sizing: border-box;
+	float: left;
+	width: 738px;
+	padding: 20px 0;
+	position: relative;	
+	margin-right: 18px;
+	text-align: center;
+}
+
+#fileupload-container {
 	border: 4px dashed #E0E0E0;
 	font-family: Arial, sans-serif;
 	margin: 0px 20px;
 	min-height: 320px;
-	padding: 30px 30px 10px 30px;
+	padding: 40px 30px 0px 30px;
 	position: relative;
 	text-align: center;
 	
@@ -25,7 +36,7 @@
 	font-size: 18px;
 	font-weight: 200;
 	line-height: 50px;
-	margin: 50px auto 0 auto;	
+	margin: 70px auto 0 auto;	
 	position: relative;
 }			
 			

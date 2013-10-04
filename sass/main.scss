@@ -76,6 +76,7 @@ body {
 	background-color: #F5F5F5;
 	border: 1px solid #CCC;
 	color: #999;	
+	font-size: 90%;
 	list-style-position: inside;
 	margin-bottom: 20px;		
 	padding: 0;
@@ -98,8 +99,9 @@ body {
 }
 
 #sidebar li.current {
-	list-style-image: url('../img/step_current.png');	
-	color: #333;	
+	color: #333;
+	font-weight: bold;
+	list-style-image: url('../img/step_current.png');		
 }
 
 #sidebar .group {
@@ -200,3 +202,4 @@ input[type="number"] {
 @import "_preview.scss";
 @import "_swatches.scss";
 @import "_upload.scss";
+@import "_finishing.scss";

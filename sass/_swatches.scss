@@ -2,10 +2,10 @@
 
 #tiles {
 	box-sizing: border-box;
-	-webkit-column-count:3; /* Safari and Chrome */
-	column-count:3;
-	-webkit-column-gap:18px; /* Safari and Chrome */
-	column-gap:18px;
+	-webkit-column-count: 3; /* Safari and Chrome */
+	column-count: 3;
+	-webkit-column-gap: 18px; /* Safari and Chrome */
+	column-gap: 18px;
 	column-fill: auto;
 	-webkit-column-fill: auto;
 	float: left;
@@ -47,26 +47,8 @@
 	}
 }
 
-.tile img, .flyouts legend img {
+#flyout_tabbed.tile img, .flyouts legend img {
 	height: 16px;
-}
-
-.flyouts legend {
-	background-color: #F5F5F5;
-	border: 3px solid #FFF;
-	box-sizing: border-box;
-	display: block;
-	font-size: 85%;
-	padding: 4px 15px;
-	text-align: right;
-	width: 100%;	
-}
-
-#flyout_tabbed legend {
-	position: absolute;
-		bottom: 0;
-		right: 0;
-	width: 73%;
 }
 
 /* ************ SWATCH COLORS ************* */

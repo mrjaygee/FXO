@@ -1,0 +1,47 @@
+/* **********************************************
+   FINISHING OPTIONS FLYOUT
+   ********************************************** */
+   
+#flyout_stapling, #flyout_binding, #flyout_hole_punching {
+	.flyouts:after { left: 62%; }
+	.flyouts:before { left: 62%; }   
+   
+   	#tiles {
+   		box-sizing: border-box;
+   		-webkit-column-count: 0; /* Safari and Chrome */
+   		column-count: 0;
+   		-webkit-column-gap: none; /* Safari and Chrome */
+   		column-gap: auto;
+   		column-fill: auto;
+   		-webkit-column-fill: auto;
+   		
+   		padding: 18px;
+   		
+   		.tile {
+   			background-color: rgba($lt-gray2, 0.75);
+   			border-radius: 3px;
+   			box-sizing: border-box;
+   			float: left;
+   			height: 200px;
+   			line-height: 2em;
+   			margin: 0 0 6px 0;
+   			padding: 12px 0;
+   			text-align: center;
+   			width: 33%;
+   			
+   				&:hover {
+   					background-color: $fxo-blue1;
+   					color: #FFF;
+   					cursor: pointer;
+   				}
+   			
+   				&.selected-option {
+   					background-color: $fxo-blue1;
+   					color: #FFF;
+   					cursor: pointer;
+   				}
+   		}
+   	}
+} 
+   
+#flyout_hole_punching .flyouts { bottom: 70px; }

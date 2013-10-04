@@ -1,4 +1,4 @@
-<div id="print_preview">
+<div id="main_container">
 	<div id="fileupload-container">
 		<h2>Drag &amp; Drop your file here <img src="img/fxo_upload2.png" alt="Upload" /></h2>
 		<div class="hero-unit">
