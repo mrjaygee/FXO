@@ -25,7 +25,10 @@
 			<div id="sidebar">
 				<ul>
 					<li class="complete">1 <a href="#">File or Template <span class="edit_link">edit</span></span></a></li>
-					<li class="complete">2 <a href="#">File: MyResume.pdf <span class="edit_link">edit</span></a></li>
+					<div class="group complete">
+						<li class="complete">2 <a href="#">File: MyResume.pdf <span class="edit_link">edit</span></a></li>
+						<li class="complete">&nbsp;&nbsp; <a href="#">No Tabs or Inserts <span class="edit_link">edit</span></a></li>
+					</div>
 					<div class="group">
 						<li class="complete">3 <a href="#">Black &amp; White Print <span class="edit_link">edit</span></a></li>
 						<li class="complete">&nbsp;&nbsp; <a href="#">Double-Sided Print <span class="edit_link">edit</span></a></li>

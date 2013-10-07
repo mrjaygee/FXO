@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<title>FXO 4.0 Finishing Options</title>
+	<title>FXO 4.0 Your Print Order</title>
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/base.css" />
 	<link rel="stylesheet" href="css/main.css" />
@@ -17,7 +17,7 @@
 		</div>
 	</div>
 	<div id="question">
-		<div class="row"><h3>Would you like to add any finishing options?</h3></div>
+		<div class="row"><h3>Does everything look good?</h3></div>
 	</div>
 	<div id="preview">
 		<div class="row">
@@ -29,26 +29,26 @@
 						<li class="complete">2 <a href="#">File: MyResume.pdf <span class="edit_link">edit</span></a></li>
 						<li class="complete">&nbsp;&nbsp; <a href="#">No Tabs or Inserts <span class="edit_link">edit</span></a></li>
 					</div>
-					<div class="group">
+					<div class="group complete">
 						<li class="complete">3 <a href="#">Black &amp; White Print <span class="edit_link">edit</span></a></li>
 						<li class="complete">&nbsp;&nbsp; <a href="#">Double-Sided Print <span class="edit_link">edit</span></a></li>
 						<li class="complete">&nbsp;&nbsp; <a href="#">Laser (32lb) General Use Paper <span class="edit_link">edit</span></a></li>
-						<li class="current">&nbsp;&nbsp; <span id="finishing_options">Finishing Options</span></li>
+						<li class="complete">&nbsp;&nbsp; <a href="#">No Finishing Options <span class="edit_link">edit</span></a></li>
 					</div>
-					<li>4 Confirm &amp; Purchase</li>
+					<li class="current">4 Confirm &amp; Purchase</li>
 				</ul>
 				<div id="estimate">
-					<h3>Estimated Total:<br>$0.79</h3>
+					<h3>Estimated Total:<br>$3.95</h3>
 					<form method="post" action="">
 						<label for="quantity">Quantity:</label>
-						<input type="number" name="quantity" value="1" />
+						<input type="number" name="quantity" value="5" />
 					</form>
 				</div>
 			</div>
 		</div>
 		<div class="clearfix"></div>
 	</div>
-	<?php include('includes/buttons_finishing.php'); ?>
+	<?php include('includes/buttons_your_print_order.php'); ?>
   	<script src="js/jquery-1.10.2.min.js"></script>
   	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
 	<script>

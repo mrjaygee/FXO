@@ -106,45 +106,50 @@ body {
   border-bottom: 1px solid #CCC;
   box-shadow: inset 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
+/* line 112, ../sass/main.scss */
+#sidebar .group.complete {
+  background-color: #F5F5F5;
+  box-shadow: none;
+}
 
-/* line 113, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 #sidebar .group li {
   border-bottom: 1px solid #E2E2E2;
 }
 
-/* line 117, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 #sidebar .group li:last-child {
   border-bottom: none;
 }
 
-/* line 121, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .edit_link {
   font-size: 75%;
   text-decoration: underline;
 }
 
-/* line 126, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 #estimate {
   background-color: #F5F5F5;
   border: 1px solid #CCC;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 15px 20px;
   text-align: right;
 }
 
-/* line 134, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 #estimate h3 {
   line-height: 1.2em;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 #estimate form {
   padding-top: 15px;
   border-top: 1px solid #ccc;
   margin-top: 15px;
 }
 
-/* line 144, ../sass/main.scss */
+/* line 149, ../sass/main.scss */
 input[type="number"] {
   padding: 5px;
   width: 60px;
@@ -153,66 +158,97 @@ input[type="number"] {
 /* **********************************************
    SELECTION BUTTONS
    ********************************************** */
-/* line 155, ../sass/main.scss */
+/* line 160, ../sass/main.scss */
 #options {
   position: relative;
   top: 150px;
 }
 
-/* line 160, ../sass/main.scss */
+/* line 165, ../sass/main.scss */
 #options.popular {
   top: 175px;
 }
 
-/* line 164, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 #options .row {
   position: relative;
   z-index: 400;
 }
 
-/* line 169, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 #options p {
   color: #4D148C;
   padding: 10px 0;
 }
 
+/* line 179, ../sass/main.scss */
+.add_to_cart button {
+  padding: 0 3%;
+  position: absolute;
+  right: 0;
+}
+
 /* **********************************************
    PAPER PICKUP FLYOUT
    ********************************************** */
-/* line 178, ../sass/main.scss */
+/* line 189, ../sass/main.scss */
 #flyout_tabbed {
   bottom: 75px;
   left: 32px;
 }
 
-/* line 183, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 #flyout_general.flyouts:after {
   left: 10%;
 }
 
-/* line 184, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 #flyout_general.flyouts:before {
   left: 10%;
 }
 
-/* line 186, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
 #flyout_resume.flyouts:after {
   left: 28%;
 }
 
-/* line 187, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 #flyout_resume.flyouts:before {
   left: 28%;
 }
 
-/* line 189, ../sass/main.scss */
+/* line 200, ../sass/main.scss */
 #flyout_cover.flyouts:after {
   left: 49%;
 }
 
-/* line 190, ../sass/main.scss */
+/* line 201, ../sass/main.scss */
 #flyout_cover.flyouts:before {
   left: 49%;
+}
+
+/* **********************************************
+   YOUR PRINT ORDER 
+   ********************************************** */
+/* line 207, ../sass/main.scss */
+#order_name_form {
+  box-sizing: border-box;
+  float: left;
+  padding: 11px 0;
+  text-align: center;
+  width: 738px;
+}
+/* line 214, ../sass/main.scss */
+#order_name_form input[type="text"] {
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  font-size: 0.8em;
+  padding: 10px;
+}
+/* line 221, ../sass/main.scss */
+#order_name_form label {
+  font-weight: bold;
+  margin-right: 20px;
 }
 
 /* **********************************************
