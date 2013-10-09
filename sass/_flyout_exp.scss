@@ -5,16 +5,16 @@
 .flyouts{
 	display: block;
 	background-color: rgba(255, 255, 255, 1.0);
-	min-height: 250px;
-		bottom: 30px;
+	height: 533px;
+		bottom: 6px;
 		left: 0;
-	width: 925px;
+	width: 985px;
 	z-index: 1010;
 }
 
 .flyouts:after, .flyouts:before {
 	top: 100%;
-	border: solid transparent;
+	border: none;
 	content: " ";
 	height: 0;
 	width: 0;
@@ -25,7 +25,7 @@
 .flyouts:after {
 	border-color: rgba(136, 183, 213, 0);
 	border-top-color: #FFF;
-	border-width: 20px;
+	border-width: 0;
 	left: 70%;
 	margin-left: -20px;
 }
@@ -34,7 +34,7 @@
 	border-color: rgba(194, 225, 245, 0);
 	/*border-top-color: #02B3F0;*/
 	border-top-color: #999;
-	border-width: 21px;
+	border-width: 0;
 	left: 70%;
 	margin-left: -21px;
 }
@@ -67,7 +67,7 @@
 	border-right: 1px solid #888;
 	box-shadow: none;
 	display: table-cell;
-	padding: 10px 20px;	
+	padding: 10px 20px 5px 20px;	
 	width: 25%;
 }
 
@@ -81,49 +81,44 @@
 	border-right: none;
 }
 
+#flyout_exp #paper_types li p {
+	line-height: 1.25em;
+	padding: 4px 0;
+}
+
 /* **********************************************
    TILES & SWATCHES
    ********************************************** */
 
 #tiles {
 	box-sizing: border-box;
-	-webkit-column-count: 4; /* Safari and Chrome */
-	column-count: 4;
+	-webkit-column-count: 3; /* Safari and Chrome */
+	column-count: 3;
 	-webkit-column-gap: 18px; /* Safari and Chrome */
 	column-gap: 18px;
 	column-fill: auto;
 	-webkit-column-fill: auto;
 	float: none;
+	height: 366px;
+	overflow-x: scroll;
 	padding: 18px;
-	width: 925px;
+	width: 980px;
 }
 
 .tile {
-	background-color: rgba($lt-gray2, 0.75);
-	border-radius: 3px;
-	box-sizing: border-box;
-	break-inside: avoid-column;
-	-webkit-column-break-inside: avoid;
-	height: 36px;
-	line-height: 2em;
+	height: 100px;
 	margin: 0 0 6px 0;
 	padding: 2px;
-
-	&:hover {
-		background-color: $fxo-blue1;
-		color: #FFF;
-		cursor: pointer;
-	}
-
-	&.selected-option {
-		background-color: $fxo-blue1;
-		color: #FFF;
-		cursor: pointer;
-	}
 	
 	&.recycled {
-		background-image: url(../img/recycle-icon-gray.png);
-		background-position: 95% 57%;
-		background-repeat: no-repeat;
+		background-position: 95% 14%;
 	}
+}
+
+.swatch {
+	background-image: url("../img/resume_horiz_2pg_Page_1.png");
+	background-size: 125px auto; 
+	height: 92px;
+	margin-right: 15px;
+	width: 125px;
 }

@@ -258,7 +258,7 @@ input[type="number"] {
    
    ••••••••••••••••••••••••••••••••••••••••••••••
    ********************************************** */
-/* line 9, ../sass/_buttons.scss */
+/* line 13, ../sass/_buttons.scss */
 .mybutton {
   background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#88d2ea), to(#00a0d3));
   border: 1px solid #999;
@@ -274,67 +274,65 @@ input[type="number"] {
   padding: 0 8%;
   width: auto;
 }
-
-/* line 25, ../sass/_buttons.scss */
+/* line 28, ../sass/_buttons.scss */
 .mybutton:hover {
   /*	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,150,221,1)), color-stop(100%,rgba(40,129,188,1)));*/
   background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#91e0fa), to(#00aae0));
   color: white !important;
   cursor: pointer;
 }
-
-/* line 32, ../sass/_buttons.scss */
+/* line 35, ../sass/_buttons.scss */
 .mybutton.active {
   background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#ad92c9), to(#4d148c));
   border: #777;
 }
 
-/* line 37, ../sass/_buttons.scss */
+/* line 42, ../sass/_buttons.scss */
 .mybutton.active:hover {
   background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#b89cd6), to(#5a17a3));
 }
 
-/* line 41, ../sass/_buttons.scss */
+/* line 46, ../sass/_buttons.scss */
 .mybutton .gray {
   background: -webkit-gradient(linear, 0% 0%, 0% 74%, from(#cccccc), to(#888888));
 }
 
-/* line 45, ../sass/_buttons.scss */
+/* line 50, ../sass/_buttons.scss */
 .mybutton span {
   font-size: 75%;
 }
 
-/* line 49, ../sass/_buttons.scss */
+/* line 54, ../sass/_buttons.scss */
 .mybutton:last-child {
   margin: 0;
 }
 
-/* line 53, ../sass/_buttons.scss */
+/* line 58, ../sass/_buttons.scss */
 .mybutton img {
   display: none;
   height: 22px;
   margin: -3px 7px 0 0;
 }
 
-/* line 59, ../sass/_buttons.scss */
+/* line 64, ../sass/_buttons.scss */
 .mybutton img.selected-button {
   display: inline;
 }
 
-/* line 63, ../sass/_buttons.scss */
+/* line 68, ../sass/_buttons.scss */
 .close img {
   height: 22px;
 }
 
 /* BUTTON ON UPLOAD PAGE */
-/* line 69, ../sass/_buttons.scss */
+/* line 74, ../sass/_buttons.scss */
 .hero-unit .mybutton {
   height: 50px;
   font-size: 90%;
 }
 
 /* BUTTONS ON PAPER PICKER PAGE */
-/* line 76, ../sass/_buttons.scss */
+/* line 81, ../sass/_buttons.scss */
 .popular .mybutton {
   float: left;
   /* **** USE THESE FOR 5 BUTTON LAYOUT **** */
@@ -344,7 +342,7 @@ input[type="number"] {
   z-index: 400;
 }
 
-/* line 85, ../sass/_buttons.scss */
+/* line 90, ../sass/_buttons.scss */
 .btn_group {
   background-color: #999999;
   border-top-right-radius: 5px;
@@ -358,7 +356,7 @@ input[type="number"] {
   z-index: 300;
 }
 
-/* line 98, ../sass/_buttons.scss */
+/* line 103, ../sass/_buttons.scss */
 .btn_group span {
   color: whitesmoke;
   background-color: #999999;
@@ -375,11 +373,23 @@ input[type="number"] {
 }
 
 /* BUTTONS ON FINISHING OPTIONS PAGE */
-/* line 115, ../sass/_buttons.scss */
+/* line 120, ../sass/_buttons.scss */
 .finishing_options .mybutton {
   margin: 0 1% 0 0;
   padding: 0.5% 1.25% 0 1.25%;
   width: 23.5%;
+}
+
+/* BUTTONS ON EXPERIMENTAL PAPER PICKER PAGE */
+/* line 127, ../sass/_buttons.scss */
+.exp .mybutton {
+  padding: 0.5% 1.25% 0 1.25%;
+  width: 48.85%;
+  background-color: green;
+}
+/* line 132, ../sass/_buttons.scss */
+.exp .mybutton:first-child {
+  margin: 0 1.31% 0 0;
 }
 
 /* **********************************************
@@ -1132,17 +1142,17 @@ div.fileupload-icon-googledrive:hover {
 .flyouts {
   display: block;
   background-color: white;
-  min-height: 250px;
-  bottom: 30px;
+  height: 533px;
+  bottom: 6px;
   left: 0;
-  width: 925px;
+  width: 985px;
   z-index: 1010;
 }
 
 /* line 15, ../sass/_flyout_exp.scss */
 .flyouts:after, .flyouts:before {
   top: 100%;
-  border: solid transparent;
+  border: none;
   content: " ";
   height: 0;
   width: 0;
@@ -1154,7 +1164,7 @@ div.fileupload-icon-googledrive:hover {
 .flyouts:after {
   border-color: rgba(136, 183, 213, 0);
   border-top-color: #FFF;
-  border-width: 20px;
+  border-width: 0;
   left: 70%;
   margin-left: -20px;
 }
@@ -1164,7 +1174,7 @@ div.fileupload-icon-googledrive:hover {
   border-color: rgba(194, 225, 245, 0);
   /*border-top-color: #02B3F0;*/
   border-top-color: #999;
-  border-width: 21px;
+  border-width: 0;
   left: 70%;
   margin-left: -21px;
 }
@@ -1200,7 +1210,7 @@ div.fileupload-icon-googledrive:hover {
   border-right: 1px solid #888;
   box-shadow: none;
   display: table-cell;
-  padding: 10px 20px;
+  padding: 10px 20px 5px 20px;
   width: 25%;
 }
 
@@ -1216,52 +1226,49 @@ div.fileupload-icon-googledrive:hover {
   border-right: none;
 }
 
+/* line 84, ../sass/_flyout_exp.scss */
+#flyout_exp #paper_types li p {
+  line-height: 1.25em;
+  padding: 4px 0;
+}
+
 /* **********************************************
    TILES & SWATCHES
    ********************************************** */
-/* line 88, ../sass/_flyout_exp.scss */
+/* line 93, ../sass/_flyout_exp.scss */
 #tiles {
   box-sizing: border-box;
-  -webkit-column-count: 4;
+  -webkit-column-count: 3;
   /* Safari and Chrome */
-  column-count: 4;
+  column-count: 3;
   -webkit-column-gap: 18px;
   /* Safari and Chrome */
   column-gap: 18px;
   column-fill: auto;
   -webkit-column-fill: auto;
   float: none;
+  height: 366px;
+  overflow-x: scroll;
   padding: 18px;
-  width: 925px;
+  width: 980px;
 }
 
-/* line 101, ../sass/_flyout_exp.scss */
+/* line 108, ../sass/_flyout_exp.scss */
 .tile {
-  background-color: rgba(245, 245, 245, 0.75);
-  border-radius: 3px;
-  box-sizing: border-box;
-  break-inside: avoid-column;
-  -webkit-column-break-inside: avoid;
-  height: 36px;
-  line-height: 2em;
+  height: 100px;
   margin: 0 0 6px 0;
   padding: 2px;
 }
-/* line 112, ../sass/_flyout_exp.scss */
-.tile:hover {
-  background-color: #00a0d3;
-  color: #FFF;
-  cursor: pointer;
-}
-/* line 118, ../sass/_flyout_exp.scss */
-.tile.selected-option {
-  background-color: #00a0d3;
-  color: #FFF;
-  cursor: pointer;
-}
-/* line 124, ../sass/_flyout_exp.scss */
+/* line 113, ../sass/_flyout_exp.scss */
 .tile.recycled {
-  background-image: url(../img/recycle-icon-gray.png);
-  background-position: 95% 57%;
-  background-repeat: no-repeat;
+  background-position: 95% 14%;
+}
+
+/* line 118, ../sass/_flyout_exp.scss */
+.swatch {
+  background-image: url("../img/resume_horiz_2pg_Page_1.png");
+  background-size: 125px auto;
+  height: 92px;
+  margin-right: 15px;
+  width: 125px;
 }

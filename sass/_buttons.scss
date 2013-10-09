@@ -1,3 +1,7 @@
+$margin-two: 0 1.31% 0 0;
+$padding-two: 0.5% 1.25% 0 1.25%;
+$width-two: 48.85%;
+
 $margin-four: 0 1% 0 0;
 $padding-four: 0.5% 1.25% 0 1.25%;
 $width-four: 23.5%;
@@ -20,19 +24,20 @@ $width-five: 19%;
 	margin: 0 auto; 
 	padding: 0 8%;
 	width: auto;
+	
+	&:hover {
+	/*	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,150,221,1)), color-stop(100%,rgba(40,129,188,1)));*/
+		background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#91E0FA), to(#00AAE0));
+		color: white !important;
+		cursor: pointer;	
+	}
+	
+	&.active {
+		background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#AD92C9), to(#4D148C));
+		border: #777;
+	}
 }
 
-.mybutton:hover {
-/*	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(56,150,221,1)), color-stop(100%,rgba(40,129,188,1)));*/
-	background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#91E0FA), to(#00AAE0));
-	color: white !important;
-	cursor: pointer;	
-}
-
-.mybutton.active {
-	background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#AD92C9), to(#4D148C));
-	border: #777;
-}
 
 .mybutton.active:hover {
 	background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#B89CD6), to(#5A17A3));	
@@ -116,4 +121,17 @@ $width-five: 19%;
 	margin: $margin-four;
 	padding: $padding-four;
 	width: $width-four;
+}
+
+/* BUTTONS ON EXPERIMENTAL PAPER PICKER PAGE */
+.exp .mybutton {
+	padding: $padding-two;
+	width: $width-two;
+
+	background-color: green;
+	&:first-child {
+		margin: $margin-two;
+	}
+	
+	&:last-child {}
 }
