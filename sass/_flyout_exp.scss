@@ -1,0 +1,129 @@
+/* **********************************************
+   PAPER PICKUP FLYOUT
+   ********************************************** */
+
+.flyouts{
+	display: block;
+	background-color: rgba(255, 255, 255, 1.0);
+	min-height: 250px;
+		bottom: 30px;
+		left: 0;
+	width: 925px;
+	z-index: 1010;
+}
+
+.flyouts:after, .flyouts:before {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.flyouts:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #FFF;
+	border-width: 20px;
+	left: 70%;
+	margin-left: -20px;
+}
+
+.flyouts:before {
+	border-color: rgba(194, 225, 245, 0);
+	/*border-top-color: #02B3F0;*/
+	border-top-color: #999;
+	border-width: 21px;
+	left: 70%;
+	margin-left: -21px;
+}
+
+.flyouts legend {
+	background-color: #F5F5F5;
+	border: 3px solid #FFF;
+	box-sizing: border-box;
+	display: block;
+	font-size: 85%;
+	padding: 4px 15px;
+	text-align: right;
+	width: 100%;	
+}
+
+
+#paper_types {
+	float: none;
+	height: auto;
+	min-height: 100px;
+	width: 100%;	
+}
+
+#paper_types ul {
+	display: table;
+	width: 100%;
+}
+
+#paper_types li {
+	border-right: 1px solid #888;
+	box-shadow: none;
+	display: table-cell;
+	padding: 10px 20px;	
+	width: 25%;
+}
+
+#paper_types li.selected {
+	border-bottom: none;
+	box-shadow: inset -4px 0px 2px -2px rgba(0, 0, 0, 0.25);
+}
+
+#paper_types li:last-child {
+	border-bottom: 1px solid #888;
+	border-right: none;
+}
+
+/* **********************************************
+   TILES & SWATCHES
+   ********************************************** */
+
+#tiles {
+	box-sizing: border-box;
+	-webkit-column-count: 4; /* Safari and Chrome */
+	column-count: 4;
+	-webkit-column-gap: 18px; /* Safari and Chrome */
+	column-gap: 18px;
+	column-fill: auto;
+	-webkit-column-fill: auto;
+	float: none;
+	padding: 18px;
+	width: 925px;
+}
+
+.tile {
+	background-color: rgba($lt-gray2, 0.75);
+	border-radius: 3px;
+	box-sizing: border-box;
+	break-inside: avoid-column;
+	-webkit-column-break-inside: avoid;
+	height: 36px;
+	line-height: 2em;
+	margin: 0 0 6px 0;
+	padding: 2px;
+
+	&:hover {
+		background-color: $fxo-blue1;
+		color: #FFF;
+		cursor: pointer;
+	}
+
+	&.selected-option {
+		background-color: $fxo-blue1;
+		color: #FFF;
+		cursor: pointer;
+	}
+	
+	&.recycled {
+		background-image: url(../img/recycle-icon-gray.png);
+		background-position: 95% 57%;
+		background-repeat: no-repeat;
+	}
+}

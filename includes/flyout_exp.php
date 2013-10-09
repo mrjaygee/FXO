@@ -1,16 +1,9 @@
-<div id="flyout_tabbed" class="flyouts">
+<div id="flyout_exp" class="flyouts">
 	<div class="close"><img src="img/x-button-icon.png"></div>
 	<h4>Paper Options</h4>
 	<div id="paper_types">
 		<ul>
-			<li id="general" class="selected">General Use Papers<br>
-			<p>Good for your everyday document printing needs.</p></li>
-			<li id="resume">Résumé Papers<br>
-			<p>Best for résumés and executive correspondence.</p></li>
-			<li id="cover">Card &amp; Cover Stock<br>
-			<p>For business cards and report covers.</p></li>
-			<li>Transparencies<br>
-			<p>For overhead projections.</p></li>
+			<li id="general" class="selected">General Use Papers<br><p>Good for your everyday document printing needs.</p></li><li id="resume">Résumé Papers<br><p>Best for résumés and executive correspondence.</p></li><li id="cover">Card &amp; Cover Stock<br><p>For business cards and report covers.</p></li><li>Transparencies<br><p>For overhead projections.</p></li>
 		</ul>
 	</div>
 	<div id="tiles">

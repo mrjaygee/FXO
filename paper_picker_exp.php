@@ -48,7 +48,7 @@
 		</div>
 		<div class="clearfix"></div>
 	</div>
-	<?php include('includes/buttons_popular.php'); ?>
+	<?php include('includes/buttons_exp.php'); ?>
   	<script src="js/jquery-1.10.2.min.js"></script>
   	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
 	<script>
@@ -86,7 +86,7 @@
 			// FLYOUTS
 			$('.mybutton img').eq(0).addClass('selected-button'); // initialize 'Laser (24lb)' buttons 
 		 	$("#more-options").click(function() {
-		 	  	$('#flyout_tabbed').fadeToggle('fast');
+		 	  	$('#flyout_exp').fadeToggle('fast');
 		 	});
 
 			// FLYOUT CLOSE
@@ -122,7 +122,7 @@
 			  	button_selection();
 			  	paper_selection();
 			  	general_tab_selection();
-			  	$('#flyout_tabbed').fadeOut('fast');			  	
+			  	$('#flyout_exp').fadeOut('fast');			  	
 			  	$('.mybutton img').eq(0).addClass('selected-button');
 			  	$('#general .tile').delay(800).eq(0).addClass('selected-option');
 			  	$('#general .tile').delay(800).eq(0).children().addClass('selected-option');
@@ -137,7 +137,7 @@
 			  	button_selection();
 			  	paper_selection();
 			  	general_tab_selection();			  	
-			  	$('#flyout_tabbed').fadeOut('fast');
+			  	$('#flyout_exp').fadeOut('fast');
 			  	$('.mybutton img').eq(1).addClass('selected-button');
 			  	$('#general .tile').delay(800).eq(1).addClass('selected-option');
 			  	$('#general .tile').delay(800).eq(1).children().addClass('selected-option');
@@ -152,7 +152,7 @@
 			  	button_selection();
 			  	paper_selection();
 			  	general_tab_selection();
-			  	$('#flyout_tabbed').fadeOut('fast');
+			  	$('#flyout_exp').fadeOut('fast');
 			  	$('.mybutton img').eq(2).addClass('selected-button');
 			  	$('#general .tile').delay(800).eq(5).addClass('selected-option');
 			  	$('#general .tile').delay(800).eq(5).children().addClass('selected-option');
