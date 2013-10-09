@@ -32,34 +32,35 @@ $width-five: 19%;
 		cursor: pointer;	
 	}
 	
+	&:last-child {
+		margin: 0;
+	}
+	
 	&.active {
 		background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#AD92C9), to(#4D148C));
 		border: #777;
+		
+		&:hover {
+			background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#B89CD6), to(#5A17A3));	
+		}
 	}
+	
+	&.gray {
+		background: -webkit-gradient(linear, 0% 0%, 0% 74%, from(#CCCCCC), to(#888888));
+	}
+	
+	span {
+		font-size: 75%;	
+	}
+	
+	img {
+		display: none;
+		height: 22px;
+		margin: -3px 7px 0 0;
+	}
+	
 }
 
-
-.mybutton.active:hover {
-	background: -webkit-gradient(linear, 0% 0%, 0% 75%, from(#B89CD6), to(#5A17A3));	
-}
-
-.mybutton .gray {
-	background: -webkit-gradient(linear, 0% 0%, 0% 74%, from(#CCCCCC), to(#888888));
-}
-
-.mybutton span {
-	font-size: 75%;	
-}
-
-.mybutton:last-child {
-	margin: 0;
-}
-
-.mybutton img {
-	display: none;
-	height: 22px;
-	margin: -3px 7px 0 0;
-}
 
 .mybutton img.selected-button {
 	display: inline;
@@ -124,14 +125,19 @@ $width-five: 19%;
 }
 
 /* BUTTONS ON EXPERIMENTAL PAPER PICKER PAGE */
-.exp .mybutton {
+#options.exp button {
 	padding: $padding-two;
 	width: $width-two;
-
-	background-color: green;
-	&:first-child {
-		margin: $margin-two;
+	
+	&:last-child {
+		margin: 0;
 	}
 	
-	&:last-child {}
+	&:first-child {
+		margin: 0 18px 0 0;
+	}
+}
+
+#options.exp button:first-child {
+		margin: 0 18px 0 0;
 }
