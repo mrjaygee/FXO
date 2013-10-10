@@ -378,19 +378,16 @@ input[type="number"] {
 /* BUTTONS ON EXPERIMENTAL PAPER PICKER PAGE */
 /* line 128, ../sass/_buttons.scss */
 #options.exp button {
+  margin: 0 1.31% 0 0;
   padding: 0.5% 1.25% 0 1.25%;
   width: 48.85%;
 }
-/* line 132, ../sass/_buttons.scss */
+/* line 133, ../sass/_buttons.scss */
 #options.exp button:last-child {
   margin: 0;
 }
-/* line 136, ../sass/_buttons.scss */
-#options.exp button:first-child {
-  margin: 0 18px 0 0;
-}
 
-/* line 141, ../sass/_buttons.scss */
+/* line 138, ../sass/_buttons.scss */
 #options.exp button:first-child {
   margin: 0 18px 0 0;
 }
@@ -1138,140 +1135,3 @@ div.fileupload-icon-googledrive:hover {
 }
 
 /* COMMENT THIS OUT WHEN NOT IN USE */
-/* **********************************************
-   PAPER PICKUP FLYOUT
-   ********************************************** */
-/* line 5, ../sass/_flyout_exp.scss */
-.flyouts {
-  display: block;
-  background-color: white;
-  height: 533px;
-  bottom: 6px;
-  left: 0;
-  width: 985px;
-  z-index: 1010;
-}
-
-/* line 15, ../sass/_flyout_exp.scss */
-.flyouts:after, .flyouts:before {
-  top: 100%;
-  border: none;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-/* line 25, ../sass/_flyout_exp.scss */
-.flyouts:after {
-  border-color: rgba(136, 183, 213, 0);
-  border-top-color: #FFF;
-  border-width: 0;
-  left: 70%;
-  margin-left: -20px;
-}
-
-/* line 33, ../sass/_flyout_exp.scss */
-.flyouts:before {
-  border-color: rgba(194, 225, 245, 0);
-  /*border-top-color: #02B3F0;*/
-  border-top-color: #999;
-  border-width: 0;
-  left: 70%;
-  margin-left: -21px;
-}
-
-/* line 42, ../sass/_flyout_exp.scss */
-.flyouts legend {
-  background-color: #F5F5F5;
-  border: 3px solid #FFF;
-  box-sizing: border-box;
-  display: block;
-  font-size: 85%;
-  padding: 4px 15px;
-  text-align: right;
-  width: 100%;
-}
-
-/* line 54, ../sass/_flyout_exp.scss */
-#paper_types {
-  float: none;
-  height: auto;
-  min-height: 100px;
-  width: 100%;
-}
-
-/* line 61, ../sass/_flyout_exp.scss */
-#paper_types ul {
-  display: table;
-  width: 100%;
-}
-
-/* line 66, ../sass/_flyout_exp.scss */
-#paper_types li {
-  border-right: 1px solid #888;
-  box-shadow: none;
-  display: table-cell;
-  padding: 10px 20px 5px 20px;
-  width: 25%;
-}
-
-/* line 74, ../sass/_flyout_exp.scss */
-#paper_types li.selected {
-  border-bottom: none;
-  box-shadow: inset -4px 0px 2px -2px rgba(0, 0, 0, 0.25);
-}
-
-/* line 79, ../sass/_flyout_exp.scss */
-#paper_types li:last-child {
-  border-bottom: 1px solid #888;
-  border-right: none;
-}
-
-/* line 84, ../sass/_flyout_exp.scss */
-#flyout_exp #paper_types li p {
-  line-height: 1.25em;
-  padding: 4px 0;
-}
-
-/* **********************************************
-   TILES & SWATCHES
-   ********************************************** */
-/* line 93, ../sass/_flyout_exp.scss */
-#tiles {
-  box-sizing: border-box;
-  -webkit-column-count: 3;
-  /* Safari and Chrome */
-  column-count: 3;
-  -webkit-column-gap: 18px;
-  /* Safari and Chrome */
-  column-gap: 18px;
-  column-fill: auto;
-  -webkit-column-fill: auto;
-  float: none;
-  height: 366px;
-  overflow-x: scroll;
-  padding: 18px;
-  width: 980px;
-}
-
-/* line 108, ../sass/_flyout_exp.scss */
-.tile {
-  height: 100px;
-  margin: 0 0 6px 0;
-  padding: 2px;
-}
-/* line 113, ../sass/_flyout_exp.scss */
-.tile.recycled {
-  background-position: 95% 14%;
-}
-
-/* line 118, ../sass/_flyout_exp.scss */
-.swatch {
-  background-image: url("../img/resume_horiz_2pg_Page_1.png");
-  background-size: 125px auto;
-  height: 92px;
-  margin-right: 15px;
-  width: 125px;
-}
